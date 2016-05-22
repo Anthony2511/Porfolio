@@ -1,0 +1,117 @@
+.topbar{
+    background: url("../img/backgroundHeader.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'raleway';
+    font-weight: 400;
+    color: $colorWhite;
+    &::after{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    &__opacity{
+        background-color: $colorBlack ;
+        opacity: 0.75;
+        height: 100vh;
+    }
+    &__navigation{
+        float: right;
+        margin-top: 20px;
+    }
+    &__list{
+        &__link{
+            text-decoration: none;
+            color: $colorWhite;
+            font-size: 23px;
+
+        }
+        &__detail{
+            display: inline-block;
+            margin-right: 50px;
+            padding: 7px 17px;
+            &:hover{
+                color: black;
+                background-color: white;
+                border-radius: 5px;
+                padding: 7px 17px;
+            }
+        }
+    }
+    &__intro{
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 40vh;
+        text-align: center;
+
+    }
+    &__name{
+        font-size: 100px;
+        margin-bottom: 10px;
+    }
+    &__job{
+        font-size: 55px;
+        font-family: 'raleway';
+        font-weight: lighter;
+    }
+    &__scroll{
+        text-align: center;
+        margin-top: 350px;
+        &__image{
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            padding-right: 2.2em;
+            &::before,&:hover{
+                -webkit-animation-name: hvr-icon-down;
+                animation-name: hvr-icon-down;
+                -webkit-animation-duration: 0.75s;
+                animation-duration: 0.75s;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+        }
+        &__image:hover:before, &__image:focus:before, &__image:active:before {
+
+        }
+        @-webkit-keyframes hvr-icon-down {
+          0%,
+          50%,
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+
+          25%,
+          75% {
+            -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+          }
+        }
+
+        @keyframes hvr-icon-down {
+          0%,
+          50%,
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+
+          25%,
+          75% {
+            -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+          }
+        }
+
+
+
+
+    }
+}

@@ -1,0 +1,317 @@
+/* Baobab
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 24/04/2016
+ */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-light-webfont.woff2") format("woff2"), url("../fonts/raleway-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-medium-webfont.woff2") format("woff2"), url("../fonts/raleway-medium-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"), url("../fonts/raleway-semibold-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-bold-webfont.woff2") format("woff2"), url("../fonts/raleway-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+h1 {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: none; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.topbar {
+  background: url("../img/backgroundHeader.jpg") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'raleway';
+  font-weight: 400;
+  color: white; }
+  .topbar::after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .topbar__opacity {
+    background-color: black;
+    opacity: 0.75;
+    height: 100vh; }
+  .topbar__navigation {
+    float: right;
+    margin-top: 20px; }
+  .topbar__list__link {
+    text-decoration: none;
+    color: white;
+    font-size: 23px; }
+  .topbar__list__detail {
+    display: inline-block;
+    margin-right: 50px;
+    padding: 7px 17px; }
+    .topbar__list__detail:hover {
+      color: black;
+      background-color: white;
+      border-radius: 5px;
+      padding: 7px 17px; }
+  .topbar__intro {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 40vh;
+    text-align: center; }
+  .topbar__name {
+    font-size: 100px;
+    margin-bottom: 10px; }
+  .topbar__job {
+    font-size: 55px;
+    font-family: 'raleway';
+    font-weight: lighter; }
+  .topbar__scroll {
+    text-align: center;
+    margin-top: 350px;
+    /* Icon Down */ }
+    .topbar__scroll__image {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      padding-right: 2.2em; }
+      .topbar__scroll__image::before, .topbar__scroll__image:hover {
+        -webkit-animation-name: hvr-icon-down;
+        animation-name: hvr-icon-down;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out; }
+
+@-webkit-keyframes hvr-icon-down {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+  75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+
+@keyframes hvr-icon-down {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  25%,
+  75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); } }
+
+.container {
+  font-family: 'raleway';
+  z-index: 10; }
+  .container::after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .container__propos {
+    width: 1100px;
+    margin: 50px auto;
+    position: relative; }
+  .container__title {
+    font-size: 68px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #869694; }
+  .container__profil {
+    width: 350px;
+    height: auto;
+    vertical-align: top;
+    z-index: 30; }
+  .container__presentation {
+    width: 700px;
+    display: inline-block; }
+    .container__presentation__text {
+      font-weight: lighter;
+      line-height: 30px;
+      font-size: 20px;
+      z-index: 20;
+      margin-left: 50px;
+      color: #777777; }
+    .container__presentation__text + .container__presentation__text {
+      margin-top: 36px; }
+  .container__cv {
+    background: url("../img/backgroundCitation.jpg") no-repeat center;
+    background-size: cover;
+    height: 200px;
+    position: relative; }
+    .container__cv__link {
+      text-decoration: none;
+      width: 330px;
+      margin: 0 auto;
+      position: absolute;
+      top: 60px;
+      left: 41.3%; }
+    .container__cv__text {
+      color: #cccccc;
+      background-color: #869694;
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      padding: 15px 0;
+      border-radius: 12px;
+      position: relative;
+      top: 10px; }
+      .container__cv__text:hover {
+        color: white; }
+  .container__realisations {
+    width: 1100px;
+    margin: 0 auto; }
+  .container__view {
+    text-decoration: none;
+    float: right;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black; }
+  .container__projets__link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .container__projets__content + .container__projets__content {
+    margin-left: 50px; }
+  .container__projets__hov {
+    opacity: 0; }
+    .container__projets__hov:hover {
+      opacity: 1; }
+  .container__projets__content {
+    position: relative;
+    display: inline-block; }
+  .container__projets__color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #48c1b3;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 10; }
+  .container__projets__image {
+    width: 330px;
+    height: 220px; }
+  .container__projets__title {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 20;
+    text-align: center; }
+  .container__projets__text-one {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .container__projets__text-two {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px; }
+    .container__projets__text-two:hover {
+      color: #48c1b3;
+      background-color: white; }
+
+.footer {
+  width: 1100px;
+  margin: 0 auto;
+  font-family: 'raleway'; }
+  .footer__title {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+    font-weight: bold; }
+  .footer__social {
+    text-align: center;
+    margin-bottom: 50px; }
+  .footer__facebook {
+    text-decoration: none; }
+  .footer__facebook + .footer__facebook {
+    margin-left: 30px; }
+  .footer__svg:hover > .footer__path {
+    fill: #7ddbd4; }
+
+/*# sourceMappingURL=styles.css.map */
