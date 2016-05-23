@@ -4,11 +4,12 @@
     font-family: 'raleway';
 
     &__title{
-        font-size:50px;
+        font-size: 68px;
         text-align: center;
         text-transform: uppercase;
         margin: 50px 0;
-        font-weight: bold;
+        font-weight: 500;
+        color: #869694;
     }
     &__social{
         text-align: center;
@@ -16,14 +17,14 @@
 
 
     }
-    &__facebook{
+    &__reseau{
             text-decoration: none;
         }
-        &__facebook + &__facebook{
+        &__reseau + &__reseau{
             margin-left: 30px;
         }
         &__svg:hover > &__path{
-                fill:#7ddbd4;
+                fill:#869694;
 
 
         }
