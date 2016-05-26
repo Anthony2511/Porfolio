@@ -1,31 +1,27 @@
 .footer{
-    width: 1100px;
+    width: 68.75em; // 1100px
     margin: 0 auto;
     font-family: 'raleway';
 
     &__title{
-        font-size: 68px;
+        font-size: 4.25em; // 68px
         text-align: center;
         text-transform: uppercase;
-        margin: 50px 0;
+        margin: 0.735294em 0; // 50px 0 (68px)
         font-weight: 500;
-        color: #869694;
+        color: $colorPortfolio;
     }
     &__social{
         text-align: center;
-        margin-bottom: 50px;
-
-
+        margin-bottom: 3.125em; // 50px
     }
     &__reseau{
             text-decoration: none;
         }
         &__reseau + &__reseau{
-            margin-left: 30px;
+            margin-left: 1.875em; // 30px
         }
         &__svg:hover > &__path{
-                fill:#869694;
-
-
+                fill:$colorPortfolio;
         }
-        }
+    }
