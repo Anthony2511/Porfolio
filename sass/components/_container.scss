@@ -7,7 +7,7 @@
         content: "";
     }
     &__propos{
-        width: 68.75em; // 1100px
+        max-width: 68.75em; // 1100px
         margin: 3.125em auto; // 50px
         position: relative;
         z-index: 5;
@@ -21,13 +21,13 @@
         color: $colorPortfolio;
     }
     &__profil{
-        width: 21.875em; // 350px
+        max-width: 21.875em; // 350px
         height: auto;
         vertical-align: top;
         z-index: 30;
     }
     &__presentation{
-        width: 43.75em; // 700px
+        max-width: 43.75em; // 700px
         display: inline-block;
         &__text{
             font-weight: lighter;
@@ -78,7 +78,7 @@
         color: $colorTextPresentation;
     }
     &__realisations{
-        width: 68.75em; // 1100px
+        max-width: 68.75em; // 1100px
         margin: 9.375em auto; // 150px
         z-index: 10;
         }
@@ -196,4 +196,99 @@
         &__detail + &__detail{
             margin-top: 1.875em; // 30px
         }
+}
+
+/********** MEDIA QUERIES **********/
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: auto;
+        &__profil{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        &__presentation{
+                max-width: 37.5em; // 600px
+            &__text{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+        }
+        &__projets{
+            margin: 0 30px;
+            &__image{
+                max-width: 100%;
+                height: auto;
+            }
+            &__content{
+            }
+        }
+    }
+}
+@media screen and (max-width: 1096px) {
+    .container{
+        &__presentation{
+            max-width: 31.25em; // 500px
+            font-size: 1em; // 16px
+        }
+        &__projets{
+            margin: 0 30px;
+            &__content{
+            }
+            &__text-one{
+                font-size: 25px;
+            }
+            &__text-two{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 895px) {
+    .container{
+        &__presentation{
+            max-width: 25em; // 400px
+        }
+        &__projets{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__colors{
+                width:100%;
+                height: auto;
+            }
+            &__content{
+                        margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .container{
+        &__propos{
+            width: 100%;
+            text-align: center;
+        }
+        &__projets{
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        &__title{
+            font-size: 3.75em; // 60px
+        }
+        &__cv{
+            &__text{
+                width: 100%;
+            }
+        }
+        &__presentation{
+            &__text{
+                margin-right: 1.25em; // 20px
+            }
+        }
+    }
 }

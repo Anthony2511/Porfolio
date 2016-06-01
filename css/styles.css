@@ -221,7 +221,7 @@ table {
   .topbar__job {
     font-size: 1.5625em; } }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 780px) {
   .active {
     background: none;
     color: white;
@@ -234,8 +234,7 @@ table {
     transition-duration: 0.5s; }
   .site-content {
     position: absolute;
-    top: 66px;
-    /* La hauteur du header */
+    top: 4.125em;
     right: 0;
     left: 0;
     bottom: 0;
@@ -248,7 +247,7 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .topbar {
     position: static;
     z-index: 50;
@@ -268,7 +267,7 @@ table {
         display: block;
         width: 1.25em;
         height: 0;
-        left: 15px;
+        left: 0.9375em;
         box-shadow: 0 0.625em 0 0.09375em white, 0 1em 0 0.09375em white, 0 1.375em 0 0.09375em white; }
     .topbar__navigation {
       position: absolute;
@@ -276,14 +275,14 @@ table {
       top: 0;
       bottom: 0;
       background-color: #869694;
-      width: 200px;
-      transform: translateX(200px); }
+      width: 12.5em;
+      transform: translateX(12.5em); }
     .topbar__list__link {
       display: block;
       height: 100%;
       width: 100%;
       text-align: center;
-      line-height: 50px; }
+      line-height: 3.125em; }
     .topbar__list__detail {
       padding: 0;
       margin-right: 0; }
@@ -293,9 +292,9 @@ table {
 
 @media screen and (max-width: 480px) {
   .topbar__intro {
-    width: 100%; }
+    margin: 0 1.25em; }
   .topbar__name {
-    font-size: 3.75em; }
+    font-size: 2.75em; }
   .topbar__job {
     font-size: 0.9375em; } }
 
@@ -307,7 +306,7 @@ table {
     display: block;
     content: ""; }
   .container__propos {
-    width: 68.75em;
+    max-width: 68.75em;
     margin: 3.125em auto;
     position: relative;
     z-index: 5; }
@@ -319,12 +318,12 @@ table {
     margin: 0.735294em 0;
     color: #869694; }
   .container__profil {
-    width: 21.875em;
+    max-width: 21.875em;
     height: auto;
     vertical-align: top;
     z-index: 30; }
   .container__presentation {
-    width: 43.75em;
+    max-width: 43.75em;
     display: inline-block; }
     .container__presentation__text {
       font-weight: lighter;
@@ -367,7 +366,7 @@ table {
     font-weight: 500;
     color: #777777; }
   .container__realisations {
-    width: 68.75em;
+    max-width: 68.75em;
     margin: 9.375em auto;
     z-index: 10; }
   .container__projets {
@@ -460,6 +459,63 @@ table {
       margin: 0 auto; }
   .container__detail + .container__detail {
     margin-top: 1.875em; }
+
+/********** MEDIA QUERIES **********/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: auto; }
+    .container__profil {
+      width: 100%;
+      height: auto;
+      margin: 0 auto; }
+    .container__presentation {
+      max-width: 37.5em; }
+      .container__presentation__text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; }
+    .container__projets {
+      margin: 0 30px; }
+      .container__projets__image {
+        max-width: 100%;
+        height: auto; } }
+
+@media screen and (max-width: 1096px) {
+  .container__presentation {
+    max-width: 31.25em;
+    font-size: 1em; }
+  .container__projets {
+    margin: 0 30px; }
+    .container__projets__text-one {
+      font-size: 25px; }
+    .container__projets__text-two {
+      font-size: 15px; } }
+
+@media screen and (max-width: 895px) {
+  .container__presentation {
+    max-width: 25em; }
+  .container__projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container__projets__colors {
+      width: 100%;
+      height: auto; }
+    .container__projets__content {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 780px) {
+  .container__propos {
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .container__title {
+    font-size: 3.75em; }
+  .container__cv__text {
+    width: 100%; }
+  .container__presentation__text {
+    margin-right: 1.25em; } }
 
 .footer {
   width: 68.75em;

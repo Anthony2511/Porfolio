@@ -161,7 +161,7 @@
         }
     }
 }
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 780px) {
     .active{
             background: none;
             color: $colorWhite;
@@ -178,7 +178,7 @@
   }
   .site-content {
       position: absolute;
-      top: 66px; /* La hauteur du header */
+      top: 4.125em; // 66px /* La hauteur du header */
       right: 0;
       left: 0;
       bottom: 0;
@@ -193,7 +193,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $colorOpacityMenuHamburger;
   }
    .topbar {
        position: static;
@@ -213,7 +213,7 @@
                display: block;
                width: 1.25em;
                height: 0;
-               left: 15px;
+               left: 0.9375em; // 15px
                box-shadow: 0 0.625em 0 0.09375em $colorWhite, 0 1em 0 0.09375em $colorWhite, 0 1.375em 0 0.09375em $colorWhite; //10px 16px 22px
            }
        }
@@ -224,8 +224,8 @@
            top: 0;
            bottom: 0;
            background-color: $colorPortfolio;
-           width: 200px;
-           transform: translateX(200px);
+           width: 12.5em; // 200px
+           transform: translateX(12.5em); // 200px
        }
        &__list{
            &__link{
@@ -233,12 +233,11 @@
                height: 100%;
                width: 100%;
                text-align: center;
-               line-height: 50px;
+               line-height: 3.125em; // 50px
            }
            &__detail{
                padding: 0;
                margin-right: 0;
-
                &:hover{
                    background: none;
                    color: $colorBlack;
@@ -250,10 +249,10 @@
 @media screen and (max-width: 480px) {
     .topbar{
         &__intro{
-            width: 100%;
+            margin: 0 1.25em; // 0 20px
         }
         &__name{
-            font-size: 3.75em; // 60px
+            font-size: 2.75em; // 60px
         }
         &__job{
             font-size: 0.9375em; // 15px
