@@ -205,7 +205,7 @@
         width: auto;
         &__profil{
             width: 100%;
-            height: auto;
+            height: 100%;
             margin: 0 auto;
         }
         &__presentation{
@@ -235,8 +235,6 @@
         }
         &__projets{
             margin: 0 30px;
-            &__content{
-            }
             &__text-one{
                 font-size: 25px;
             }
@@ -260,7 +258,10 @@
                 height: auto;
             }
             &__content{
-                        margin-bottom: 30px;
+                margin-bottom: 30px;
+            }
+            &__content + &__content{
+                margin-left: 0;
             }
         }
     }

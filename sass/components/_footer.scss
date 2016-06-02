@@ -24,4 +24,12 @@
         &__svg:hover > &__path{
                 fill:$colorPortfolio;
         }
+        &__copyright{
+            color: $colorTextPresentation;
+            font-size: 1.25em; // 20px
+            padding-bottom: 1.25em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
