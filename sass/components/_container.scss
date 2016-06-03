@@ -160,7 +160,7 @@
             }
         }
         &__form{
-            width: 43.75em; // 700px
+            max-width: 43.75em; // 700px
             margin: 0 auto;
         }
         &__list{
@@ -190,8 +190,6 @@
                 width: 100%;
                 margin: 0 auto;
             }
-            &--button{
-            }
         }
         &__detail + &__detail{
             margin-top: 1.875em; // 30px
@@ -203,6 +201,9 @@
 @media screen and (max-width: 1200px){
     .container{
         width: auto;
+        &__view{
+            margin-right: 30px;
+        }
         &__profil{
             width: 100%;
             height: 100%;
@@ -217,10 +218,10 @@
             }
         }
         &__projets{
-            margin: 0 30px;
+            margin: 0 1.875em; // 30px
             &__image{
                 max-width: 100%;
-                height: auto;
+                height: 100%;
             }
             &__content{
             }
@@ -234,18 +235,26 @@
             font-size: 1em; // 16px
         }
         &__projets{
-            margin: 0 30px;
+            margin: 0 1.875em; // 30px
             &__text-one{
-                font-size: 25px;
+                font-size: 1.5625em; // 25px
             }
             &__text-two{
-                font-size: 15px;
+                font-size: 0.9375em; // 15px
             }
         }
     }
 }
 @media screen and (max-width: 895px) {
     .container{
+
+        &__view{
+            display: block;
+            text-align: center;
+        }
+        &__title{
+            font-size: 3.75em; // 60px
+        }
         &__presentation{
             max-width: 25em; // 400px
         }
@@ -258,38 +267,84 @@
                 height: auto;
             }
             &__content{
-                margin-bottom: 30px;
+                margin-bottom: 1.875em; // 30px
             }
             &__content + &__content{
                 margin-left: 0;
             }
         }
+        &__contact{
+            &__title{
+                font-size: 3.75em; // 60px
+            }
+        }
+
     }
 }
 @media screen and (max-width: 780px) {
     .container{
+        &__title{
+            font-size: 3.25em; // 52px
+        }
         &__propos{
             width: 100%;
             text-align: center;
         }
-        &__projets{
+        &__contact{
+            &__title{
+                font-size: 3.25em; // 52px
+            }
+        }
+        &__form{
+            margin: 0 1.875em; // 30px
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    .container{
+        &__detail{
+            margin-left: 60px;
+            max-width: 350px;
         }
     }
 }
 @media screen and (max-width: 480px) {
     .container{
+        &__detail{
+            margin-left: 50px;
+            max-width: 250px;
+        }
         &__title{
-            font-size: 3.75em; // 60px
+            font-size: 2.75em; // 44px
         }
         &__cv{
             &__text{
                 width: 100%;
             }
         }
+        &__projets{
+            margin: 0 1.875em; // 0 30px
+            &__text-one{
+                margin-bottom: 0.6em; // 15px (25px)
+            }
+        }
         &__presentation{
             &__text{
                 margin-right: 1.25em; // 20px
             }
+        }
+        &__contact{
+            &__title{
+                font-size: 2.75em; // 44px
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .container{
+        &__detail{
+            width: 200px;
+
         }
     }
 }

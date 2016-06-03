@@ -12,5 +12,4 @@
     $( "#site-cache" ).click( function( e ) {
         $( "body" ).removeClass( "with--sidebar" );
     } );
-
 }) ( jQuery );

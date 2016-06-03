@@ -35,8 +35,8 @@
             z-index: 10;
         }
         &__image{
-            width: 60.625em; // 1100px
-            height: 600px;
+            max-width: 60.625em; // 1100px
+            height: auto;
         }
         &__title{
             position: absolute;
@@ -56,14 +56,109 @@
         &__text-two{
             text-decoration: none;
             color: $colorWhite;
-            font-size: 2.5em; // 20px
+            font-size: 2.5em; // 40px
             font-weight: 500;
             border: 0.0625em solid $colorWhite; // 1px
             border-radius: 0.3125em; // 5px
-            padding: 0.65em 1.25em; // 5px 10px
+            padding: 0.375em 0.625em; // 15px 25px (40px)
             &:hover{
                 color: $colorPortfolio;
                 background-color: $colorWhite;
             }
         }
     }
+    @media screen and (max-width: 1200px) {
+        .projets{
+            &__content{
+                margin: 0 30px 50px;
+            }
+            &__image{
+                max-width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 1096px) {
+        .projets{
+            &__text-one{
+                font-size: 55px;
+                margin-bottom: 40px;
+            }
+            &__text-two{
+                font-size: 35px;
+                padding: 10px 20px;
+            }
+        }
+    }
+        @media screen and (max-width: 895px) {
+            .projets{
+                &__title{
+                    margin-left: 40px;
+                }
+                &__text-one{
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
+                &__text-two{
+                    font-size: 30px;
+                }
+            }
+        }
+        @media screen and (max-width: 780px){
+            .projets{
+                &__text-one{
+                    font-size: 45px;
+                    margin-bottom: 40px;
+
+                }
+                &__text-two{
+                    font-size: 25px;
+                }
+            }
+        }
+        @media screen and (max-width: 580px){
+            .projets{
+                &__title{
+                    margin-left: 30px;
+                }
+                &__text-one{
+                    font-size: 40px;
+
+                }
+                &__text-two{
+                    font-size: 20px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+        @media screen and (max-width: 480px){
+            .projets{
+                &__title{
+
+                }
+                &__text-one{
+                    font-size: 30px;
+                    margin-bottom: 20px;
+
+
+                }
+                &__text-two{
+
+                }
+            }
+        }
+        @media screen and (max-width: 380px){
+            .projets{
+                &__title{
+                    margin-left: 20px;
+                    top: 25%;
+                }
+                &__text-one{
+                    font-size: 25px;
+
+
+                }
+                &__text-two{
+
+                }
+            }
+        }
