@@ -1,47 +1,39 @@
+//**********COMPONENTS**********//
+//*****FOOTER*****//
 .footer{
-    max-width: 68.75em; // 1100px
-    margin: 0 auto;
     font-family: 'raleway';
-
     &__title{
         font-size: 4.25em; // 68px
         text-align: center;
         text-transform: uppercase;
-        margin: 0.735294em 0; // 50px 0 (68px)
         font-weight: 500;
         color: $colorPortfolio;
     }
     &__social{
         text-align: center;
-        margin-bottom: 3.125em; // 50px
     }
     &__reseau{
             text-decoration: none;
         }
-        &__reseau + &__reseau{
-            margin-left: 1.875em; // 30px
-        }
-        &__svg:hover > &__path{
-                fill:$colorPortfolio;
+    &__svg:hover > &__path{
+            fill:$colorPortfolio;
+    }
+    &__copyright{
+        color: $colorTextPresentation;
+        font-size: 1.25em; // 20px;
+    }
+}
+
+//**********MEDIA QUERIES**********//
+@media screen and (max-width: 480px){
+    .footer{
+        &__title{
+            font-size: 2.75em; // 44px
         }
         &__copyright{
-            color: $colorTextPresentation;
-            font-size: 1.25em; // 20px
-            padding-bottom: 1.25em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 21.875em; // 350px
+            font-size: 0.9375em; // 15px
+            margin: 0 auto;
         }
     }
-    @media screen and (max-width: 480px){
-        .footer{
-            &__title{
-                font-size: 44px;
-            }
-            &__copyright{
-                width: 350px;
-                font-size: 15px;
-                margin: 0 auto;
-            }
-        }
-    }
+}

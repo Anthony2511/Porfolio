@@ -1,15 +1,9 @@
+//**********COMPONENTS**********//
+//*****CONTAINER*****//
 .container{
     font-family: 'raleway';
     z-index: 10;
-    &::after{
-        clear: both;
-        display: block;
-        content: "";
-    }
     &__propos{
-        max-width: 68.75em; // 1100px
-        margin: 3.125em auto; // 50px
-        position: relative;
         z-index: 5;
     }
     &__title{
@@ -17,39 +11,24 @@
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
-        margin: 0.735294em 0; // 50px (68px)
         color: $colorPortfolio;
     }
     &__profil{
-        max-width: 21.875em; // 350px
-        height: auto;
         vertical-align: top;
         z-index: 30;
     }
     &__presentation{
-        max-width: 43.75em; // 700px
-        display: inline-block;
         &__text{
             font-weight: lighter;
             line-height: 1.875em; // 30px
             font-size: 1.25em; // 20px
-            z-index: 20;
-            margin-left: 1.875em; // 30px
+            z-index: 20px;
             color: $colorTextPresentation;
-        }
-        &__text + &__text{
-            margin-top: 2.25em; // 36px
         }
     }
     &__cv{
         background: url("../img/backgroundCitation.jpg") no-repeat center;
         background-size: cover;
-        height: 12.5em; // 200px
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         &__link{
             text-decoration: none;
             text-align: center;
@@ -59,11 +38,7 @@
             background-color: $colorPortfolio;
             font-weight: bold;
             font-size: 1.375em; // 22px
-            padding: 0.681818em; // 15px (22px)
             border-radius: 0.545454em; // 12px (22px)
-            position: relative;
-            top: 0.454545em; // 10px (22px)
-            width: 13.636363em; // 300px (22px)
             &:hover{
                 color: $colorWhite;
             }
@@ -71,129 +46,80 @@
     }
     &__view{
         text-decoration: none;
-        float: right;
-        margin-top: 0.625em; // 10px
         font-size: 1.4375em; // 23px
         font-weight: 500;
         color: $colorTextPresentation;
     }
     &__realisations{
-        max-width: 68.75em; // 1100px
-        margin: 9.375em auto; // 150px
         z-index: 10;
+    }
+    &__projets{
+        &__link{
+            text-decoration: none;
         }
-        &__projets{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            &__link{
-                text-decoration: none;
-                width: 100%;
-                height: 100%;
-                display: block;
-            }
-            &__content + &__content{
-                margin-left: 3.125em; // 50px
-            }
-            &__hov{
-                opacity: 0;
-                &:hover{
-                    opacity: 1;
-                }
-            }
-            &__content{
-                position: relative;
-            }
-            &__color{
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: $colorPortfolio;
-                width: 100%;
-                height: 100%;
-                opacity: 0.6;
-                z-index: 10;
-            }
-            &__image{
-                width: 20.625em; // 330px
-                height: 13.75em; // 220px
-            }
-            &__title{
-                position: absolute;
-                top: 35%;
-                left: 0;
-                z-index: 20;
-                text-align: center;
-            }
-            &__text-one{
-                color: $colorWhite;
-                font-size: 1.875em; // 30px
-                font-weight: 500;
-                margin-bottom: 1.25em; // 20px
-                }
-            &__text-two{
-                text-decoration: none;
-                color: $colorWhite;
-                font-size: 1.25em; // 20px
-                font-weight: 500;
-                border: 0.0625em solid $colorWhite; // 1px
-                border-radius: 0.3125em; // 5px
-                padding: 0.3125em 0.65em; // 5px 10px
-                &:hover{
-                    color: $colorPortfolio;
-                    background-color: $colorWhite;
-                }
+        &__hov{
+            opacity: 0;
+            &:hover{
+                opacity: 1;
             }
         }
-        &__contact{
-            text-align: center;
-            margin-top: 3.125em; // 50px
-            padding: 1.25em 0; // 20px 0
+        &__color{
             background-color: $colorPortfolio;
-            &__title{
-                font-size: 4.25em; // 68px
-                font-weight: 500;
-                text-align: center;
-                text-transform: uppercase;
-                margin: 0.735294em 0; // 50px
-                color: $colorWhite;
+            opacity: 0.6;
+            z-index: 10;
+        }
+        &__title{
+            z-index: 20;
+            text-align: center;
+        }
+        &__text-one{
+            color: $colorWhite;
+            font-size: 1.875em; // 30px
+            font-weight: 500;
+            }
+        &__text-two{
+            text-decoration: none;
+            color: $colorWhite;
+            font-size: 1.25em; // 20px
+            font-weight: 500;
+            border: 0.0625em solid $colorWhite; // 1px
+            border-radius: 0.3125em; // 5px
+            &:hover{
+                color: $colorPortfolio;
+                background-color: $colorWhite;
             }
         }
-        &__form{
-            max-width: 43.75em; // 700px
-            margin: 0 auto;
+    }
+    &__contact{
+        text-align: center;
+        background-color: $colorPortfolio;
+        &__title{
+            font-size: 4.25em; // 68px
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            color: $colorWhite;
         }
-        &__list{
+    }
+    &__detail{
+        &__label{
+            color: $colorWhite;
+            font-size: 1.25em; // 20px
+            background-color: $colorLabel;
+            border-radius: 0.5em 0.5em 0 0; // 10px 10px 0 0 (20px)
         }
-        &__detail{
-            display: flex;
-            flex-direction: column;
-            &__label{
-                color: $colorWhite;
-                font-size: 1.25em; // 20px
-                height: 100%;
-                padding: 0.5em 0; // 10px (20px)
-                background-color: $colorLabel;
-                border-radius: 0.5em 0.5em 0 0; // 10px 10px 0 0 (20px)
-            }
-            &__text{
-                border: none;
-                font-size: 1.25em; // 20px
-                padding: 1em 0; // 20px
-                border-radius: 0 0 0.5em 0.5em; // 0 0 10px 10px
-                text-align: center;
-            }
-            &__text[type=submit]{
-                color: $colorWhite;
-                background-color:  $colorLabel;
-                border-radius: 0.625em; // 10px
-                width: 100%;
-                margin: 0 auto;
-            }
+        &__text{
+            border: none;
+            font-size: 1.25em; // 20px
+            border-radius: 0 0 0.5em 0.5em; // 0 0 10px 10px
+            text-align: center;
         }
-        &__detail + &__detail{
-            margin-top: 1.875em; // 30px
+        &__text[type=submit]{
+            color: $colorWhite;
+            background-color:  $colorLabel;
+            border-radius: 0.625em; // 10px
         }
+    }
 }
 
 /********** MEDIA QUERIES **********/
@@ -202,7 +128,7 @@
     .container{
         width: auto;
         &__view{
-            margin-right: 30px;
+            margin-right: 1.875em; // 30px
         }
         &__profil{
             width: 100%;
@@ -222,8 +148,6 @@
             &__image{
                 max-width: 100%;
                 height: 100%;
-            }
-            &__content{
             }
         }
     }
@@ -247,7 +171,6 @@
 }
 @media screen and (max-width: 895px) {
     .container{
-
         &__view{
             display: block;
             text-align: center;
@@ -278,7 +201,6 @@
                 font-size: 3.75em; // 60px
             }
         }
-
     }
 }
 @media screen and (max-width: 780px) {
@@ -303,16 +225,16 @@
 @media screen and (max-width: 580px) {
     .container{
         &__detail{
-            margin-left: 60px;
-            max-width: 350px;
+            margin-left: 3.75em; // 60px
+            max-width: 21.875em; // 350px
         }
     }
 }
 @media screen and (max-width: 480px) {
     .container{
         &__detail{
-            margin-left: 50px;
-            max-width: 250px;
+            margin-left: 3.125em; // 50px
+            max-width: 15.625em; // 250px
         }
         &__title{
             font-size: 2.75em; // 44px
@@ -343,8 +265,7 @@
 @media screen and (max-width: 380px) {
     .container{
         &__detail{
-            width: 200px;
-
+            width: 12.5em; // 200px
         }
     }
 }

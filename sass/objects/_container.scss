@@ -1,0 +1,124 @@
+//**********OBJECTS**********//
+//*****CONTAINER*****//
+.container{
+    &::after{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    &__propos{
+        max-width: 68.75em; // 1100px
+        margin: 3.125em auto; // 50px
+        position: relative;
+    }
+    &__title{
+        margin: 0.735294em 0; // 50px (68px)
+    }
+    &__profil{
+        max-width: 21.875em; // 350px
+        height: auto;
+    }
+    &__presentation{
+        max-width: 43.75em; // 700px
+        display: inline-block;
+        &__text{
+            margin-left: 1.875em; // 30px
+        }
+        &__text + &__text{
+            margin-top: 2.25em; // 36px
+        }
+    }
+    &__cv{
+        height: 12.5em; // 200px
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &__text{
+            padding: 0.681818em; // 15px (22px)
+            position: relative;
+            top: 0.454545em; // 10px (22px)
+            width: 13.636363em; // 300px (22px)
+        }
+    }
+    &__view{
+        float: right;
+        margin-top: 0.625em; // 10px
+    }
+    &__realisations{
+        max-width: 68.75em; // 1100px
+        margin: 9.375em auto; // 150px
+        }
+    &__projets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__link{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        &__content + &__content{
+            margin-left: 3.125em; // 50px
+        }
+        &__content{
+            position: relative;
+        }
+        &__color{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &__image{
+            width: 20.625em; // 330px
+            height: 13.75em; // 220px
+        }
+        &__title{
+            position: absolute;
+            top: 35%;
+            left: 0;
+        }
+        &__text-one{
+            margin-bottom: 1.25em; // 20px
+            }
+        &__text-two{
+            padding: 0.3125em 0.65em; // 5px 10px
+            &:hover{
+                color: $colorPortfolio;
+                background-color: $colorWhite;
+            }
+        }
+    }
+    &__contact{
+        margin-top: 3.125em; // 50px
+        padding: 1.25em 0; // 20px 0
+        &__title{
+            margin: 0.735294em 0; // 50px
+        }
+    }
+    &__form{
+        max-width: 43.75em; // 700px
+        margin: 0 auto;
+    }
+    &__detail{
+        display: flex;
+        flex-direction: column;
+        &__label{
+            height: 100%;
+            padding: 0.5em 0; // 10px (20px)
+        }
+        &__text{
+            padding: 1em 0; // 20px
+        }
+        &__text[type=submit]{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__detail + &__detail{
+        margin-top: 1.875em; // 30px
+    }
+}

@@ -1,0 +1,44 @@
+//**********OBJECTS**********//
+//*****PROJETS*****//
+.projets{
+    max-width: 60.625em; // 1100px
+    margin: 9.375em auto; // 150px
+    &__article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__link{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    &__content{
+        position: relative;
+        margin-bottom: 3.125em; // 50px
+    }
+    &__color{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__image{
+        max-width: 60.625em; // 1100px
+        height: auto;
+    }
+    &__title{
+        position: absolute;
+        top: 35%;
+        left: 0;
+        width: 90%;
+        margin-left: 3.125em; // 50px
+    }
+    &__text-one{
+        margin-bottom: 2.5em; // 40px
+        }
+    &__text-two{
+        padding: 0.375em 0.625em; // 15px 25px (40px)
+    }
+}
