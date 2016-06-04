@@ -1,0 +1,86 @@
+//**********COMPONENTS**********//
+//*****ARTICLE*****//
+.container{
+    &__info{
+        line-height: 1.875em; // 30px
+    }
+    &__site-picture{
+        border: 0.3125em solid $colorTextPresentation; // 5px
+        border-radius: 0.625em; // 10px
+    }
+    &__site-link{
+        font-size: 1.875em; // 30px
+        text-decoration: none;
+        background-color: $colorPortfolio;
+        border-radius: 0.3333333em; // 10px (30px)
+        color: $colorWhite;
+    }
+    &__description{
+        line-height: 1.875em; // 30px
+    }
+    &__description-text{
+        font-size: 1em; // 16px
+        font-weight: lighter;
+    }
+    &__gras{
+        font-weight:bold;
+        font-size: 1.25em; // 20px
+    }
+    &__info-det{
+        color: $colorTextPresentation;
+        font-size: 1.125em; // 18px
+    }
+}
+//********** MEDIA QUERIES**********//
+@media screen and (max-width: 1200px){
+    .container{
+        &__article{
+            margin: 0 1.875em; // 0 30px
+        }
+        &__info{
+            margin-left: 3.125em; // 50px
+        }
+        &__info-det{
+            font-size: 1em; // 16px
+        }
+        &__site-picture{
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 895px){
+    .container{
+        &__site{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__info{
+            margin-right: 3.125em; // 50px
+        }
+        &__description{
+            margin: 0 1.25em; // 20px
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        &__site-link{
+            font-size: 1.125em; // 18px
+            padding: 0.277777em 0.722222em; // 5px 13px (18px)
+            &::after{
+                display: none;
+                overflow: hidden;
+                text-indent: 100%;
+                white-space: nowrap;
+            }
+        }
+        &__description{
+            line-height: 1.25em; // 20px
+        }
+        &__info{
+            margin-top: 1.25em; // 20px
+            line-height: 1.25em; // 20px
+        }
+    }
+}

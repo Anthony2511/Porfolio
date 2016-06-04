@@ -128,7 +128,7 @@
     .container{
         width: auto;
         &__view{
-            margin-right: 1.875em; // 30px
+            margin-right: 1.25em; // 30px
         }
         &__profil{
             width: 100%;
@@ -171,10 +171,6 @@
 }
 @media screen and (max-width: 895px) {
     .container{
-        &__view{
-            display: block;
-            text-align: center;
-        }
         &__title{
             font-size: 3.75em; // 60px
         }
@@ -237,7 +233,7 @@
             max-width: 15.625em; // 250px
         }
         &__title{
-            font-size: 2.75em; // 44px
+            font-size: 2em; // 32px
         }
         &__cv{
             &__text{
@@ -257,7 +253,7 @@
         }
         &__contact{
             &__title{
-                font-size: 2.75em; // 44px
+                font-size: 2em; // 32px
             }
         }
     }
@@ -265,7 +261,7 @@
 @media screen and (max-width: 380px) {
     .container{
         &__detail{
-            width: 12.5em; // 200px
+            max-width: 12.5em; // 200px
         }
     }
 }
