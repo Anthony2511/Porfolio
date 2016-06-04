@@ -1,1 +1,8 @@
 node_modules
+
+dev/*
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/Portfolio/
