@@ -55,9 +55,9 @@
 </div>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
-<script type="text/javascript" src="midnight.jquery.min.js"></script>
-<script type="text/javascript" src="scripts/nav.js"></script>
-<script type="text/javascript" src="scripts/hamburger.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/midnight.jquery.min.js';?>"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/scripts/nav.js';?>"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/scripts/hamburger.js';?>"></script>
 
 <!-- <script>
     // Start midnight

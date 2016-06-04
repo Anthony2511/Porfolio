@@ -12,12 +12,11 @@
                 <header class="topbar-two" id="home">
                     <a href="#" class="topbar-two__icon" id="topbar-two__icon"></a>
                         <nav class="topbar-two__navigation">
-                            <h1 aria-level="1">Navigation principale</h1>
+                            <h1 aria-level="1"><?php _e('Navigation principale','b');?></h1>
                             <ul class="topbar-two__list">
-                                <a href="<?php echo get_home_url(); ?>" class="topbar-two__list__link"><li class="topbar-two__list__detail">Accueil</li></a>
-                                <a href="<?php echo get_home_url(); ?>#propos" rel="m_PageScroll2id" class="topbar-two__list__link"><li class="topbar-two__list__detail">A propos</li></a>
-                                <a href="<?php echo get_home_url(); ?>#realisations" class="topbar-two__list__link"><li class="topbar-two__list__detail active-two">Réalisations</li></a>
-                                <a href="<?php echo get_home_url(); ?>#contact" class="topbar-two__list__link"><li class="topbar-two__list__detail">Contact</li></a>
+                                <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
+                                    <a href="<?php echo $navItem->url;?>" class="topbar-two__list__link"><li class="topbar-two__list__detail"><?php echo $navItem->label;?></li></a>
+                                <?php endforeach; ?>
                             </ul>
                         </nav>
                 </header>
