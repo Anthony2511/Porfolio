@@ -44,7 +44,7 @@ if(is_page()){
 			<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="container__projets__content">
                 <a href="<?php the_permalink();?>" class="container__projets__link">
-                    <img src="img/baobab.jpg" class="container__projets__image" width="2250" height="1500" alt="Un gestionnaire de bibliothèque"/>
+                    <img src="<?php the_field('article_site');?>" class="container__projets__image" width="2250" height="1500" alt="Un gestionnaire de bibliothèque"/>
                     <div class="container__projets__hov">
                         <div class="container__projets__title">
                             <p class="container__projets__text-one">
@@ -58,7 +58,7 @@ if(is_page()){
             </div>
 			<?php endwhile; endif; ?>
         </div>
-        <a href="<?php the_field('portfolio_link-projet');?>" class="container__view"><?php _e('Voir tous mes projets','b');?></a>
+        <a href="<?php the_permalink(32);?>" class="container__view"><?php _e('Voir tous mes projets','b');?></a>
     </div>
     <div class="container__contact" id="contact" data-midnight="orange">
         <h2 aria-level="2" class="container__contact__title"><?php the_field('portfolio_section-three');?></h2>

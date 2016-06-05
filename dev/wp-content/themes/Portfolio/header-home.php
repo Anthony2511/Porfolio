@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Portfolio - Anthony Beaumecker</title>
+        <title><?php the_title();?> - Anthony Beaumecker</title>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/styles.css';?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -17,7 +17,7 @@
                             <ul class="topbar__list">
                                 <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
                                     <a href="<?php echo $navItem->url;?>" class="topbar__list__link"><li class="topbar__list__detail"><?php echo $navItem->label;?></li></a>
-                                <?php endforeach; ?>    
+                                <?php endforeach; ?>
                             </ul>
                         </nav>
                         <div class="topbar__intro">

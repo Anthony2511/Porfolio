@@ -3,6 +3,9 @@
  * Define post_types & taxonomies
  */
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'thumb-last-project', 330,223, true );
+add_image_size( 'thumb-project-detail', 510,291, true );
+add_image_size( 'thumb-project-list', 970,549, true );
 // add_image_size( 'thumb-article', 931, 621, true );
 add_filter( 'thumb-article', 'wpshout_custom_sizes' );
 function wpshout_custom_sizes( $sizes ) {

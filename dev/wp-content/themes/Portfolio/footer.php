@@ -1,15 +1,16 @@
 </main>
+<?php $easy_options = get_option("easy_page_options"); ?>
 <footer class="footer">
-    <h2 aria-level="2" class="footer__title">Me suivre</h2>
+    <h2 aria-level="2" class="footer__title"><?php echo $easy_options['title'];?></h2>
     <div class="footer__social">
-        <a href="https://www.facebook.com/" class="footer__reseau">
+        <a href="<?php echo $easy_options['facebook'];?>" class="footer__reseau">
             <svg version="1.1" class="footer__svg" id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 20 20"enable-background="new 0 0 20 20" xml:space="preserve" width="50" height="50">
             <path  class="footer__path" d="M17,1H3C1.9,1,1,1.9,1,3v14c0,1.101,0.9,2,2,2h7v-7H8V9.525h2V7.475c0-2.164,1.212-3.684,3.766-3.684l1.803,0.002v2.605
                 h-1.197C13.378,6.398,13,7.144,13,7.836v1.69h2.568L15,12h-2v7h4c1.1,0,2-0.899,2-2V3C19,1.9,18.1,1,17,1z", fill="#9b9b9b"/>
             </svg>
         </a>
-        <a href="https://www.twitter.com/" class="footer__reseau">
+        <a href="<?php echo $easy_options['twitter'];?>" class="footer__reseau">
             <svg version="1.1" class="footer__svg" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve" width="50" height="50">
             <path  class="footer__path" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
@@ -20,7 +21,7 @@
                 C425.85,165.75,413.1,175.95,400.35,186.15z", fill="#9b9b9b"/>
             </svg>
         </a>
-        <a href="https://www.github.com/" class="footer__reseau">
+        <a href="<?php echo $easy_options['github'];?>" class="footer__reseau">
             <svg version="1.1" class="footer__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" width="50" height="50">
             <path  class="footer__path" d="M32,2.984C32,1.336,30.664,0,29.016,0H2.984C1.336,0,0,1.336,0,2.984v26.031C0,30.664,1.336,32,2.984,32h26.031
@@ -38,7 +39,7 @@
                 C24.326,16.935,21.039,18.408,18.584,18.66z", fill="#9b9b9b"/>
             </svg>
         </a>
-        <a href="https://www.pinterest.com/" class="footer__reseau">
+        <a href="<?php echo $easy_options['pinterest'];?>" class="footer__reseau">
             <svg version="1.1"class="footer__svg" id="Pinterest" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve" width="50" height="50">
             <path class="footer__path" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
@@ -51,7 +52,7 @@
             </svg>
         </a>
     </div>
-    <span class="footer__copyright">&copy;Design by Anthony Beaumecker</span>
+    <span class="footer__copyright"><?php echo $easy_options['copyright'];?></span>
 </div>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
