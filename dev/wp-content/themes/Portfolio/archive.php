@@ -4,7 +4,7 @@
 */
 if(is_page()){
     query_posts([
-        'posts_per_page' => 5,
+        'posts_per_page' => 10,
         'orderby' => 'date',
         'order' => 'DESC',
         'post_type' => 'post'
@@ -15,7 +15,7 @@ get_header();?>
         <div class="projets__article">
             <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="projets__content">
-                <a href="article.html" class="projets__link">
+                <a href="<?php the_permalink();?>" class="projets__link">
                     <img src="<?php the_field('article_site');?>" class="projets__image" width="3081" height="1500" alt="Un site sur Nicolas De Stael"/>
                     <div class="projets__hov">
                         <div class="projets__title">
@@ -33,3 +33,4 @@ get_header();?>
     </div>
     <?php
         get_footer();
+        ?>

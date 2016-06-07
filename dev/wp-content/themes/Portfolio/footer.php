@@ -1,8 +1,8 @@
 </main>
 <?php $easy_options = get_option("easy_page_options"); ?>
 <footer class="footer">
-    <h2 aria-level="2" class="footer__title"><?php echo $easy_options['title'];?></h2>
-    <div class="footer__social">
+    <section class="footer__social">
+        <h2 aria-level="2" class="footer__title"><?php echo $easy_options['title'];?></h2>
         <a href="<?php echo $easy_options['facebook'];?>" class="footer__reseau">
             <svg version="1.1" class="footer__svg" id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 20 20"enable-background="new 0 0 20 20" xml:space="preserve" width="50" height="50">
@@ -51,9 +51,8 @@
                 c0-84.15,71.4-153,158.1-153s158.1,68.85,158.1,153C413.1,290.7,372.3,362.1,280.5,362.1z", fill="#9b9b9b"/>
             </svg>
         </a>
-    </div>
+    </section>
     <span class="footer__copyright"><?php echo $easy_options['copyright'];?></span>
-</div>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/midnight.jquery.min.js';?>"></script>

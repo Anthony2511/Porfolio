@@ -147,7 +147,7 @@
             margin: 0 1.875em; // 30px
             &__image{
                 max-width: 100%;
-                height: 100%;
+                height: auto;
             }
         }
     }
@@ -160,12 +160,6 @@
         }
         &__projets{
             margin: 0 1.875em; // 30px
-            &__text-one{
-                font-size: 1.5625em; // 25px
-            }
-            &__text-two{
-                font-size: 0.9375em; // 15px
-            }
         }
     }
 }
@@ -181,6 +175,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            &__title{
+                left: 20%;
+                width: 300px;
+            }
             &__colors{
                 width:100%;
                 height: auto;
@@ -208,6 +206,11 @@
             width: 100%;
             text-align: center;
         }
+        &__projets{
+            &__title{
+                left: 20%;
+            }
+        }
         &__contact{
             &__title{
                 font-size: 3.25em; // 52px
@@ -223,6 +226,11 @@
         &__detail{
             margin-left: 3.75em; // 60px
             max-width: 21.875em; // 350px
+        }
+        &__projets{
+            &__title{
+                max-width: 250px;
+            }
         }
     }
 }
@@ -244,6 +252,10 @@
             margin: 0 1.875em; // 0 30px
             &__text-one{
                 margin-bottom: 0.6em; // 15px (25px)
+                font-size: 25px;
+            }
+            &__text-two{
+                font-size: 15px;
             }
         }
         &__presentation{
@@ -262,6 +274,11 @@
     .container{
         &__detail{
             max-width: 12.5em; // 200px
+        }
+        &__projets{
+            &__title{
+                max-width: 200px;
+            }
         }
     }
 }

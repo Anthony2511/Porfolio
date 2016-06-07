@@ -1,5 +1,6 @@
 //**********OBJECTS**********//
 //*****CONTAINER*****//
+
 .container{
     &::after{
         clear: both;
@@ -59,6 +60,10 @@
             height: 100%;
             display: block;
         }
+        &__image{
+            max-width: 100%;
+            height: auto;
+        }
         &__content + &__content{
             margin-left: 3.125em; // 50px
         }
@@ -74,8 +79,9 @@
         }
         &__title{
             position: absolute;
-            top: 35%;
+            top: 20%;
             left: 0;
+            width: 300px;
         }
         &__text-one{
             margin-bottom: 1.25em; // 20px
@@ -88,6 +94,7 @@
             }
         }
     }
+
     &__contact{
         margin-top: 3.125em; // 50px
         padding: 1.25em 0; // 20px 0
@@ -107,7 +114,8 @@
             padding: 0.5em 0; // 10px (20px)
         }
         &__text{
-            padding: 1em 0; // 20px
+            padding: 1em 0; // 20px (20px)
+            width: 100%;
         }
         &__text[type=submit]{
             width: 100%;

@@ -1,11 +1,3 @@
-/* hepl-mmi/workflow
- *
- * /Gruntfile.js - Grunt configuration file
- *
- * coded by leny@flatLand!
- * started at 11/02/2016
- */
-
 "use strict";
 
 module.exports = function( grunt ) {
@@ -53,7 +45,7 @@ module.exports = function( grunt ) {
             },
             "styles": {
                 "files": {
-                    "css/styles.css": "sass/styles.scss"
+                    "./dev/wp-content/themes/Portfolio/css/styles.css": "sass/styles.scss"
                 }
             }
         },
@@ -70,14 +62,14 @@ module.exports = function( grunt ) {
                 "files": [ "sass/**/*.scss" ],
                 "tasks": [ "sass:styles" ]
             }
-        }
+        },
     } );
 
     // 3. aliases
     grunt.registerTask( "default", [
         "build",
         "analyse",
-        "cowsay:done"
+        "cowsay:done",
     ] );
 
     grunt.registerTask( "build", [ "sass:styles" ] );
@@ -86,8 +78,8 @@ module.exports = function( grunt ) {
 
     grunt.registerTask( "work", [
         "build",
-        "analyse",
+        //"analyse",
         "browserSync",
-        "watch"
+        "watch",
     ] );
 };
