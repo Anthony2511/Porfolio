@@ -1,10 +1,5 @@
 //**********COMPONENTS**********//
 //*****TOPBAR-TWO*****//
-.active-two{
-        color: $colorPortfolio;
-        border-bottom: 0.125em solid $colorPortfolio; // 2px
-        border-radius: 0.3125em; // 5px
-}
 .midnightHeader.orange {
     background-color:$colorPortfolio;
 }
@@ -19,19 +14,16 @@
         background-color: $colorBlack ;
         opacity: 0.75;
     }
-    &__navigation{
-        text-align: center;
-    }
     &__list{
         &__link{
             text-decoration: none;
-            color: $colorPortfolio;
+            color: $colorWhite;
             font-size: 1.4375em; // 23px
         }
         &__detail{
             &:hover{
-                color: $colorPortfolio;
-                border-bottom: 0.125em solid $colorPortfolio; // 2px
+                color: $colorBlack;
+                background-color: $colorWhite;
                 border-radius: 0.3125em; // 5px
             }
         }

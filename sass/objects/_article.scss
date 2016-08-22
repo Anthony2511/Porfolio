@@ -1,6 +1,30 @@
 //**********OBJECTS**********//
 //*****ARTICLE*****//
+#lampe{
+    &::before{
+        content: url('../img/lampe.png');
+    }
+}
+#palette{
+    &::before{
+        content: url('../img/palette.png');
+        margin-right: 0.3125em;
+    }
+}
 .container{
+    &__projet-title{
+        margin-bottom: 1em; // 40px (40px)
+    }
+    &__description{
+        display: flex;
+        flex-direction: row;
+    }
+    &__projet{
+        max-width: 520px;
+    }
+    &__projet + &__projet{
+        margin-left: 3.125em; // 50px
+    }
     &__article{
         max-width: 68.75em; // 1100px
         margin: 0 auto;

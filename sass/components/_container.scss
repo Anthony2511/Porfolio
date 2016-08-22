@@ -11,7 +11,7 @@
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
-        color: $colorPortfolio;
+        color: $colorPrimary;
     }
     &__profil{
         vertical-align: top;
@@ -23,7 +23,7 @@
             line-height: 1.875em; // 30px
             font-size: 1.25em; // 20px
             z-index: 20px;
-            color: $colorTextPresentation;
+            color: $colorText;
         }
     }
     &__cv{
@@ -35,7 +35,7 @@
         }
         &__text{
             color: $colorTextCV;
-            background-color: $colorPortfolio;
+            background-color: $colorPrimary;
             font-weight: bold;
             font-size: 1.375em; // 22px
             border-radius: 0.545454em; // 12px (22px)
@@ -92,7 +92,7 @@
     }
     &__contact{
         text-align: center;
-        background-color: $colorPortfolio;
+        background-color: $colorPrimary;
         &__title{
             font-size: 4.25em; // 68px
             font-weight: 500;

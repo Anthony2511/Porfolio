@@ -12,7 +12,6 @@
                 <h1 aria-level="1" class="hidden">Portfolio</h1>
                 <header class="topbar" id="home">
                     <a href="#" class="topbar__icon" id="topbar__icon"></a>
-                    <div class="topbar__opacity">
                         <nav class="topbar__navigation">
                             <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
                             <ul class="topbar__list">
@@ -32,7 +31,6 @@
                         <figure class="topbar__scroll">
                             <a href="#propos"><img src="<?php echo get_template_directory_uri() .'/img/scrollTopbar.png';?>" class="topbar__scroll__image" alt="fleche de défilement" width="25" height="25" /></a>
                         </figure>
-                    </div>
                 </header>
                 <div class="site-content">
                     <div class="container">

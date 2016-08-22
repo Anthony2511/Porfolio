@@ -1,6 +1,22 @@
 //**********COMPONENTS**********//
 //*****ARTICLE*****//
+.info-sup{
+    &__title{
+        color: $colorPrimary;
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+}
 .container{
+    &__projet-title{
+        color: $colorPrimary;
+        font-size: 2.5em;
+        font-weight: 500;
+        &::before{
+            content: url('../img/iconProjet.png');
+            margin-right: 0.625em;
+        }
+    }
     &__info{
         line-height: 1.875em; // 30px
     }
@@ -11,7 +27,7 @@
     &__site-link{
         font-size: 1.875em; // 30px
         text-decoration: none;
-        background-color: $colorPortfolio;
+        background-color: $colorPrimary;
         border-radius: 0.3333333em; // 10px (30px)
         color: $colorWhite;
     }
@@ -21,13 +37,14 @@
     &__description-text{
         font-size: 1em; // 16px
         font-weight: lighter;
+        color: $colorText;
     }
     &__gras{
         font-weight:bold;
         font-size: 1.25em; // 20px
     }
     &__info-det{
-        color: $colorTextPresentation;
+        color: $colorText;
         font-size: 1.125em; // 18px
     }
 }
@@ -49,6 +66,14 @@
     }
 }
 @media screen and (max-width: 895px){
+    .info-sup{
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: center;
+        &__title{
+            font-size: 2em;
+        }
+    }
     .container{
         &__site{
             display: flex;
@@ -58,8 +83,20 @@
         &__info{
             margin-right: 3.125em; // 50px
         }
+        &__projet{
+            margin: 0 auto;
+        }
+        &__projet + &__projet{
+            margin: auto;
+        }
+        &__projet-title{
+            text-align: center;
+            font-size: 2em;
+        }
         &__description{
             margin: 0 1.25em; // 20px
+            display: flex;
+            flex-direction: column;
         }
     }
 }

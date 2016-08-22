@@ -45,7 +45,7 @@ module.exports = function( grunt ) {
             },
             "styles": {
                 "files": {
-                    "./dev/wp-content/themes/Portfolio/css/styles.css": "sass/styles.scss"
+                    "css/styles.css": "sass/styles.scss"
                 }
             }
         },

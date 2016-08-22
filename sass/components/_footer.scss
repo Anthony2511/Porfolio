@@ -7,7 +7,7 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 500;
-        color: $colorPortfolio;
+        color: $colorPrimary;
     }
     &__social{
         text-align: center;
@@ -16,7 +16,7 @@
             text-decoration: none;
         }
     &__svg:hover > &__path{
-            fill:$colorPortfolio;
+            fill:$colorPrimary;
     }
     &__copyright{
         color: $colorTextPresentation;

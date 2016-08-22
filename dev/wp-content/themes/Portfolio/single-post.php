@@ -18,12 +18,25 @@ get_header();
             </div>
         </div>
             <div class="container__description">
-                <p class="container__description-text">
-                    <?php the_field('article_paragraphe-one');?>
-                </p>
-                <p class="container__description-text">
-                    <?php the_field('article_paragraphe-two');?>
-                </p>
+                <div class="container__projet">
+                    <h2 aria-level="2" class="container__projet-title">Le projet</h2>
+                    <p class="container__description-text">
+                        <?php the_field('article_paragraphe-one');?>
+                    </p>
+                </div>
+                <div class="container__projet">
+                    <h2 aria-level="2" class="container__projet-title" id="lampe">La réalisation</h2>
+                    <p class="container__description-text">
+                        <?php the_field('article_paragraphe-two');?>
+                    </p>
+                </div>
+            </div>
+            <div class="info-sup">
+                <h2 aria-level="2" class="info-sup__title" id="palette">Les couleurs</h2>
+                <img src="<?php the_field('color-one');?>" alt="" />
+                <img src="<?php the_field('color-two');?>" alt="" />
+                <img src="<?php the_field('color-three');?>" alt="" />
+                <img src="<?php the_field('color-four');?>" alt="" />
             </div>
     </div>
     <?php

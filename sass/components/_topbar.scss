@@ -13,15 +13,11 @@
     color: $colorWhite;
 }
 .topbar{
-    background: url("../img/backgroundHeader.jpg") no-repeat center fixed;
+    background: url("../img/background.jpg") no-repeat center fixed;
     background-size: cover;
     font-family: 'raleway';
     font-weight: 400;
     color: $colorWhite;
-    &__opacity{
-        background-color: $colorBlack ;
-        opacity: 0.75;
-    }
     &__list{
         padding: 0.625em; // 10px
         &__link{
@@ -39,6 +35,7 @@
     }
     &__intro{
         text-align: center;
+        z-index: 10000;
     }
     &__name{
         font-size: 6.25em; // 100px

@@ -11,12 +11,8 @@
         display: block;
         content: "";
     }
-    &__opacity{
-        height: 100vh;
-    }
     &__navigation{
         max-width: 100%;
-        float: right;
     }
     &__list{
         padding: 0.625em; // 10px

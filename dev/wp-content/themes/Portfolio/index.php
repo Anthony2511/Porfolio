@@ -44,7 +44,7 @@ if(is_page()){
 			<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="container__projets__content">
                 <a href="<?php the_permalink();?>" class="container__projets__link">
-                    <img src="<?php the_field('article_site');?>" class="container__projets__image" alt=""/>
+                    <img src="<?php the_field('article_site');?>" class="container__projets__image" alt="" width="510" height="291"/>
                     <div class="container__projets__hov">
                         <div class="container__projets__title">
                             <p class="container__projets__text-one">
