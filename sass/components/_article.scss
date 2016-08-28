@@ -12,10 +12,6 @@
         color: $colorPrimary;
         font-size: 2.5em;
         font-weight: 500;
-        &::before{
-            content: url('../img/iconProjet.png');
-            margin-right: 0.625em;
-        }
     }
     &__info{
         line-height: 1.875em; // 30px

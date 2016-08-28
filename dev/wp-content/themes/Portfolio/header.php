@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title><?php the_title();?> - Anthony Beaumecker</title>
@@ -15,12 +15,16 @@
                     <div class="topbar-two__opacity">
                         <nav class="topbar-two__navigation">
                             <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
-                            <ul class="topbar-two__list">
-                                <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-                                    <a href="<?php echo $navItem->url;?>" class="topbar-two__list__link"><li class="topbar-two__list__detail"><?php echo $navItem->label;?></li></a>
-                                <?php endforeach; ?>
-                            </ul>
+                            <div class="topbar-two__list">
+                                <a href="<?php echo get_home_url("#home");?>" class="topbar-two__list__link"><li class="topbar-two__list__detail">Accueil</li></a>
+                                <a href="<?php echo get_home_url();?>#propos" class="topbar-two__list__link"><li class="topbar-two__list__detail">A propos</li></a>
+                                <a href="<?php echo get_home_url();?>#realisations" class="topbar-two__list__link"><li class="topbar-two__list__detail">Réalisations</li></a>
+                                <a href="<?php echo get_home_url();?>#contact" class="topbar-two__list__link"><li class="topbar-two__list__detail">Contact</li></a>
+                            </div>
                         </nav>
+                        <!-- <figure class="logo">
+                            <img src="<?php the_field('portfolio_logo');?>" alt="" />
+                        </figure> -->
                     </div>
                 </header>
                 <div class="site-content">

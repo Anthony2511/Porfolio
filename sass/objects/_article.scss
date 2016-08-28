@@ -11,6 +11,12 @@
         margin-right: 0.3125em;
     }
 }
+#projet{
+    &::before{
+        content: url('../img/iconProjet.png');
+        margin-right: 0.625em;
+    }
+}
 .container{
     &__projet-title{
         margin-bottom: 1em; // 40px (40px)

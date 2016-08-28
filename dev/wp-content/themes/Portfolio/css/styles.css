@@ -245,8 +245,10 @@ table {
     width: 13.636363em; }
 
 .container__view {
-  float: right;
-  margin-top: 0.625em; }
+  margin-top: 6.250em; }
+
+.container__view-link {
+  padding: 0.625em 1.25em; }
 
 .container__realisations {
   max-width: 68.75em;
@@ -259,7 +261,8 @@ table {
   .container__projets__link {
     width: 100%;
     height: 100%;
-    display: block; }
+    display: block;
+    z-index: 10; }
   .container__projets__image {
     max-width: 100%;
     height: auto; }
@@ -275,16 +278,14 @@ table {
     height: 100%; }
   .container__projets__title {
     position: absolute;
-    top: 20%;
-    left: 0;
-    width: 300px; }
+    top: 40%;
+    left: 40%; }
   .container__projets__text-one {
-    margin-bottom: 1.25em; }
-  .container__projets__text-two {
-    padding: 0.3125em 0.65em; }
-    .container__projets__text-two:hover {
-      color: #869694;
-      background-color: white; }
+    margin-bottom: 1.25em;
+    padding: 0.3125em 0.65em;
+    display: block;
+    width: 100%;
+    height: 100%; }
 
 .container__contact {
   margin-top: 3.125em;
@@ -333,6 +334,10 @@ table {
 #palette::before {
   content: url("../img/palette.png");
   margin-right: 0.3125em; }
+
+#projet::before {
+  content: url("../img/iconProjet.png");
+  margin-right: 0.625em; }
 
 .container__projet-title {
   margin-bottom: 1em; }
@@ -561,10 +566,17 @@ table {
       .container__cv__text:hover {
         color: white; }
   .container__view {
+    text-align: center; }
+  .container__view-link {
     text-decoration: none;
     font-size: 1.4375em;
     font-weight: 500;
-    color: #777777; }
+    color: #6d7f96;
+    border: 1px solid #6d7f96;
+    border-radius: 10px; }
+    .container__view-link:hover {
+      background-color: #6d7f96;
+      color: white; }
   .container__realisations {
     z-index: 10; }
   .container__projets__link {
@@ -575,25 +587,18 @@ table {
       opacity: 1; }
   .container__projets__color {
     background-color: #869694;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: 10; }
   .container__projets__title {
     z-index: 20;
     text-align: center; }
   .container__projets__text-one {
-    color: white;
-    font-size: 1.875em;
-    font-weight: 500; }
-  .container__projets__text-two {
-    text-decoration: none;
-    color: white;
-    font-size: 1.25em;
-    font-weight: 500;
-    border: 0.0625em solid white;
-    border-radius: 0.3125em; }
-    .container__projets__text-two:hover {
-      color: #869694;
-      background-color: white; }
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+    .container__projets__text-one::before {
+      content: url("../img/eyesmore.png");
+      display: block; }
   .container__contact {
     text-align: center;
     background-color: #6d7f96; }
@@ -699,9 +704,9 @@ table {
     width: 100%; }
   .container__projets {
     margin: 0 1.875em; }
-    .container__projets__text-one {
-      margin-bottom: 0.6em;
-      font-size: 25px; }
+    .container__projets__title {
+      position: absolute;
+      left: 15%; }
     .container__projets__text-two {
       font-size: 15px; }
   .container__presentation__text {
@@ -710,10 +715,14 @@ table {
     font-size: 2em; } }
 
 @media screen and (max-width: 380px) {
+  .container__cv__text {
+    position: relative;
+    left: -10%; }
   .container__detail {
     max-width: 12.5em; }
   .container__projets__title {
-    max-width: 200px; } }
+    position: absolute;
+    left: 5%; } }
 
 .footer {
   font-family: 'raleway'; }
@@ -936,9 +945,6 @@ table {
   color: #6d7f96;
   font-size: 2.5em;
   font-weight: 500; }
-  .container__projet-title::before {
-    content: url("../img/iconProjet.png");
-    margin-right: 0.625em; }
 
 .container__info {
   line-height: 1.875em; }

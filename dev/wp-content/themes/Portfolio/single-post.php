@@ -7,7 +7,7 @@ get_header();
         <h2 aria-level="2" class="container__title"><?php the_title();?></h2>
         <div class="container__site">
             <figure class="container__figure">
-                <img src="<?php the_field('article_site');?>" class="container__site-picture"alt="Site de Baobab"/>
+                <img src="<?php the_field('article_site');?>" class="container__site-picture" alt="Site de Baobab"/>
             </figure>
             <div class="container__info">
                 <p class="container__info-det"><span class="container__gras"><?php _e('Réalisation','b');?></span> : <?php the_field('article_date');?></p>
@@ -19,7 +19,7 @@ get_header();
         </div>
             <div class="container__description">
                 <div class="container__projet">
-                    <h2 aria-level="2" class="container__projet-title">Le projet</h2>
+                    <h2 aria-level="2" class="container__projet-title" id="projet">Le projet</h2>
                     <p class="container__description-text">
                         <?php the_field('article_paragraphe-one');?>
                     </p>
@@ -33,10 +33,10 @@ get_header();
             </div>
             <div class="info-sup">
                 <h2 aria-level="2" class="info-sup__title" id="palette">Les couleurs</h2>
-                <img src="<?php the_field('color-one');?>" alt="" />
-                <img src="<?php the_field('color-two');?>" alt="" />
-                <img src="<?php the_field('color-three');?>" alt="" />
-                <img src="<?php the_field('color-four');?>" alt="" />
+                <img src="<?php the_field('color-one');?>" alt="couleur" />
+                <img src="<?php the_field('color-two');?>" alt="couleur" />
+                <img src="<?php the_field('color-three');?>" alt="couleur" />
+                <img src="<?php the_field('color-four');?>" alt="couleur" />
             </div>
     </div>
     <?php

@@ -45,10 +45,19 @@
         }
     }
     &__view{
+        text-align: center;
+    }
+    &__view-link{
         text-decoration: none;
         font-size: 1.4375em; // 23px
         font-weight: 500;
-        color: $colorTextPresentation;
+        color: $colorPrimary;
+        border: 1px solid $colorPrimary;
+        border-radius: 10px;
+        &:hover{
+            background-color: $colorPrimary;
+            color: $colorWhite;
+        }
     }
     &__realisations{
         z-index: 10;
@@ -65,7 +74,7 @@
         }
         &__color{
             background-color: $colorPortfolio;
-            opacity: 0.6;
+            opacity: 0.4;
             z-index: 10;
         }
         &__title{
@@ -73,22 +82,14 @@
             text-align: center;
         }
         &__text-one{
-            color: $colorWhite;
-            font-size: 1.875em; // 30px
-            font-weight: 500;
-            }
-        &__text-two{
+            width: 100%;
+            height: 100%;
             text-decoration: none;
-            color: $colorWhite;
-            font-size: 1.25em; // 20px
-            font-weight: 500;
-            border: 0.0625em solid $colorWhite; // 1px
-            border-radius: 0.3125em; // 5px
-            &:hover{
-                color: $colorPortfolio;
-                background-color: $colorWhite;
+            &::before{
+                content: url('../img/eyesmore.png');
+                display: block;
             }
-        }
+            }
     }
     &__contact{
         text-align: center;
@@ -250,9 +251,9 @@
         }
         &__projets{
             margin: 0 1.875em; // 0 30px
-            &__text-one{
-                margin-bottom: 0.6em; // 15px (25px)
-                font-size: 25px;
+            &__title{
+                position: absolute;
+                left: 15%;
             }
             &__text-two{
                 font-size: 15px;
@@ -272,12 +273,19 @@
 }
 @media screen and (max-width: 380px) {
     .container{
+        &__cv{
+            &__text{
+                position: relative;
+                left: -10%;
+            }
+        }
         &__detail{
             max-width: 12.5em; // 200px
         }
         &__projets{
             &__title{
-                max-width: 200px;
+                position: absolute;
+                left: 5%;
             }
         }
     }

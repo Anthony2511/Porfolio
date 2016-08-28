@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title><?php the_title();?> - Anthony Beaumecker</title>
@@ -14,11 +14,11 @@
                     <a href="#" class="topbar__icon" id="topbar__icon"></a>
                         <nav class="topbar__navigation">
                             <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
-                            <ul class="topbar__list">
+                            <div class="topbar__list">
                                 <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-                                    <a href="<?php echo $navItem->url;?>" class="topbar__list__link"><li class="topbar__list__detail"><?php echo $navItem->label;?></li></a>
+                                    <a href="<?php echo $navItem->url;?>" class="topbar__list__link"><div class="topbar__list__detail"><?php echo $navItem->label;?></div></a>
                                 <?php endforeach; ?>
-                            </ul>
+                            </div>
                         </nav>
                         <div class="topbar__intro">
                             <p class="topbar__name">

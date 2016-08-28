@@ -12,7 +12,7 @@ endif;
 
 if(is_page()){
     query_posts([
-        'posts_per_page' => 3,
+        'posts_per_page' => 2,
         'orderby' => 'date',
         'order' => 'DESC',
         'post_type' => 'post'
@@ -47,10 +47,7 @@ if(is_page()){
                     <img src="<?php the_field('article_site');?>" class="container__projets__image" alt="" width="510" height="291"/>
                     <div class="container__projets__hov">
                         <div class="container__projets__title">
-                            <p class="container__projets__text-one">
-                                <?php the_title();?>
-                            </p>
-                            <a href="<?php the_permalink();?>" class="container__projets__text-two"><?php _e('Voir le projet','b');?></a>
+                            <span class="container__projets__text-one"></span>
                         </div>
                         <div class="container__projets__color"></div>
                     </div>
@@ -58,15 +55,15 @@ if(is_page()){
             </div>
 			<?php endwhile; endif; ?>
         </div>
-        <a href="<?php the_permalink(32);?>" class="container__view"><?php _e('Voir tous mes projets','b');?></a>
+		<div class="container__view">
+			<a href="<?php the_permalink(32);?>" class="container__view-link"><?php _e('Voir tous mes projets','b');?></a>
+		</div>
     </section>
     <section class="container__contact" id="contact" data-midnight="orange">
         <h2 aria-level="2" class="container__contact__title"><?php _e('Me contacter','b');?></h2>
-        <form class="container__form" action="<?php echo get_home_url();?>" method="post">
-            <fieldset>
-                 <?php echo do_shortcode( '[contact-form-7 id="88" title="Me contacter"]' ); ?>
-            </fieldset>
-        </form>
+		<div class="container__form">
+				<?php echo do_shortcode( '[contact-form-7 id="88" title="Me contacter"]' ); ?>
+		</div>
     </section>
 <?php
 get_footer();
