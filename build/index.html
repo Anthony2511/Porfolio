@@ -10,7 +10,7 @@
   <h1 class="hidden" aria-level="1" role="heading">Anthony Beaumecker</h1>
     <nav class="nav">
       <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
-      <div class="nav__bloc wrap">
+      <div class="nav__bloc">
         <a class="nav__item" href="#">Accueil</a>
         <a class="nav__item" href="#">&Aacute; propos</a>
         <a class="nav__item" href="#">Réalisations</a>
@@ -26,21 +26,27 @@
     </header>
     <div class="wrap">
       <section class="about">
-        <h3 class="title" aria-level="3" role="heading">Qui suis-je ?</h3>
         <figure class="about__figure">
-          <img class="about__img" src="../images/me.png" width="466" height="900" alt="C'est moi">
+          <img class="about__img" src="../images/me.png" width="466" height="829" alt="C'est moi">
         </figure>
-        <p class="about__text">
-          Salut, moi c’est Anthony comme tu as pu le voir un peu plus haut ( enfin j’espère ).
-          J’ai 22 ans, beaucoup de choses me passione dans le vie dont la course à pied que je
-          pratique assez régulièrement, mais le web design en occupe la majeur partie.
-          Je maîtrise les langages de base comme HTML5 &amp; CSS3. J’utilise la méthodologie BEM
-          combiné avec SASS  STYLUS  depuis peu. Bon c’est bien beau, mais niveau back-end  ?
-          J’intègre des sites avec le CMS Wordpress et d’autres projets en PHP avec bientôt son framework Laravel.
-          La plupart du temps je code sur l’éditeur de texte Atom, qui est mon éditeur coup de coeur.
-          Envie d’en savoir plus sur mon parcours ? Mon CV n’attend plus que toi !
-        </p>
-        <a class="about__link" href="#" title="Vers mon cv">Voir mon cv</a>
+        <section class="about__bloc">
+          <h3 class="title" aria-level="3" role="heading">Qui suis-je ?</h3>
+          <p class="about__text">
+            Salut, moi c’est <strong>Anthony</strong> comme tu as pu le voir un peu plus haut ( enfin j’espère ).
+            J’ai <strong>22 ans</strong>, beaucoup de choses me passione dans le vie dont la course à pied que je
+            pratique assez régulièrement, mais le <strong>web design</strong> en occupe la majeur partie.
+          </p>
+          <p class="about__text">
+            Je maîtrise les langages de base comme <strong>HTML5</strong> &amp; <strong>CSS3</strong>. J’utilise la méthodologie <strong>BEM</strong>
+            combiné avec <strong class="coupe">SASS</strong> <strong>STYLUS</strong> depuis peu. Bon c’est bien beau, mais niveau <strong>back-end</strong> ?
+            J’intègre des sites avec le <strong>CMS Wordpress</strong> et d’autres projets en <strong>PHP</strong> avec bientôt son framework <strong>Laravel</strong>.
+            La plupart du temps je code sur l’éditeur de texte <strong>Atom</strong>, qui est mon éditeur coup de coeur.
+          </p>
+          <p class="about__text">
+            Envie d’en savoir plus sur mon parcours ? Mon <a class="underline" href="#">CV</a> n’attend plus que toi !
+          </p>
+          <a class="about__link" href="#" title="Vers mon cv">Voir mon cv</a>
+        </section>
       </section>
       <section class="works">
         <h3 class="title color" aria-level="3" role="heading">Mes dernières réalisations</h3>

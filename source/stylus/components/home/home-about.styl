@@ -1,0 +1,35 @@
+.about
+  display: flex
+  flex-direction: row
+  clearfix()
+  &__bloc
+    width: 90%
+    margin-left: s(50,16)
+    padding-bottom: s(100,16)
+  &__text
+    font-size: s(18,16)
+    color: $darkBlue
+    font-weight: 100
+    line-height: 1.6em
+    margin-bottom: s(50,18)
+    &:last-child
+      margin-bottom: 0
+    & strong
+      font-weight: bold
+  &__link
+    background-color: $darkBlue
+    color: $white
+    font-size: s(25,16)
+    font-weight: bold
+    border-radius: s(50,25)
+    padding: s(20,25) s(70,25)
+    float: right
+    &:before
+      icon('iconCheckCV')
+      margin-right: s(20,25)
+.coupe
+  text-decoration: line-through
+
+.underline
+  text-decoration: underline
+  font-weight: bold
