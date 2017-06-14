@@ -2,9 +2,121 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Anthony Beaumecker</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <p>Salut</p>
+  <h1 class="hidden" aria-level="1" role="heading">Anthony Beaumecker</h1>
+  <div id="wrap">
+    <nav class="nav">
+      <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
+      <div class="nav__bloc">
+        <a class="nav__item" href="#">Accueil</a>
+        <a class="nav__item" href="#">&Aacute; propos</a>
+        <a class="nav__item" href="#">Réalisations</a>
+        <a class="nav__item" href="#">Contact</a>
+      </div>
+    </nav>
+    <header class="header">
+      <section class="header__bloc">
+        <h2 class="header__title" aria-level="2" role="heading" >Salut, je suis Anthony</h2>
+        <p class="header__text">Un web designer belge</p>
+      </section>
+    </header>
+    <section class="about">
+      <h3 class="title" aria-level="3" role="heading">Qui suis-je ?</h3>
+      <figure class="about__figure">
+        <img class="about__img" src="../images/me.png" width="466" height="900" alt="C'est moi">
+      </figure>
+      <p class="about__text">
+        Salut, moi c’est Anthony comme tu as pu le voir un peu plus haut ( enfin j’espère ).
+        J’ai 22 ans, beaucoup de choses me passione dans le vie dont la course à pied que je
+        pratique assez régulièrement, mais le web design en occupe la majeur partie.
+        Je maîtrise les langages de base comme HTML5 &amp; CSS3. J’utilise la méthodologie BEM
+        combiné avec SASS  STYLUS  depuis peu. Bon c’est bien beau, mais niveau back-end  ?
+        J’intègre des sites avec le CMS Wordpress et d’autres projets en PHP avec bientôt son framework Laravel.
+        La plupart du temps je code sur l’éditeur de texte Atom, qui est mon éditeur coup de coeur.
+        Envie d’en savoir plus sur mon parcours ? Mon CV n’attend plus que toi !
+      </p>
+      <a class="about__link" href="#" title="Vers mon cv">Voir mon cv</a>
+    </section>
+    <section class="works">
+      <h3 class="title color" aria-level="3" role="heading">Mes dernières réalisations</h3>
+      <div class="works__container">
+        <div class="works__bloc">
+          <figure class="works__figure">
+            <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+          </figure>
+          <section class="works__infos">
+            <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
+            <span class="works__text">Site réalisé pour l'ASBL Mariam-Faso</span>
+          </section>
+          <a class="hidden" href="#" title="Vers le projet : Mariam-Faso">Projet</a>
+        </div>
+        <div class="works__bloc">
+          <figure class="works__figure">
+            <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+          </figure>
+          <section class="works__infos">
+            <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
+            <span class="works__text">Site réalisé pour l'ASBL Mariam-Faso</span>
+          </section>
+          <a class="hidden" href="#" title="Vers le projet : Mariam-Faso">Projet</a>
+        </div>
+        <div class="works__bloc">
+          <figure class="works__figure">
+            <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+          </figure>
+          <section class="works__infos">
+            <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
+            <span class="works__text">Site réalisé pour l'ASBL Mariam-Faso</span>
+          </section>
+          <a class="hidden" href="#" title="Vers le projet : Mariam-Faso">Projet</a>
+        </div>
+      </div>
+      <a class="works__link" href="#" title="Vers la page de mes projets">Voir tous mes projets</a>
+    </section>
+    <section class="contact">
+      <h3 class="title" aria-level="3" role="heading">Me contacter</h3>
+      <p class="contact__text">
+        Si tu es arrivé jusqu’ici, c’est que je t’intéresse et que tu commences déjà à me plaire.
+        Besoin d’informations supplémentaires sur mes projets, sur un sujet en particulier, contacte-moi !
+      </p>
+      <form class="contact__form" action="index.html" method="post">
+        <div class="contact__form-bloc">
+          <div class="contact__bloc">
+            <label class="contact__form-label" for="name">Votre nom :</label>
+            <input class="contact__form-input" type="text" name="name" id="name" placeholder="Beaumecker" required>
+          </div>
+          <div class="contact__bloc">
+            <label class="contact__form-label" for="firstname">Votre prénom :</label>
+            <input class="contact__form-input" type="text" name="firstname" id="firstname" placeholder="Anthony" required>
+          </div>
+          <div class="contact__bloc">
+            <label class="contact__form-label" for="mail">Votre mail :</label>
+            <input class="contact__form-input" type="mail" name="mail" id="mail" placeholder="anthonybeaumecker@gmail.com" required>
+          </div>
+        </div>
+        <div class="contact__form-bloc">
+          <div class="contact__bloc">
+            <label class="contact__form-label" for="textarea">Votre message :</label>
+            <textarea name="textarea" id="textarea" rows="8" cols="80" required></textarea>
+          </div>
+        </div>
+        <button class="contact__button" type="button" name="button">Envoyez un message</button>
+        <span class="contact__span">Tous les champs sont obligatoires *</span>
+      </form>
+    </section>
+    <footer class="footer">
+      <h3 class="title color">Me suivre</h3>
+      <div class="footer__social">
+        <a class="footer__link footer__link--facebook" href="#" title="Vers ma page Facebook">Facebook</a>
+        <a class="footer__link footer__link--github" href="#" title="Vers ma page Github">Github</a>
+        <a class="footer__link footer__link--pinterest" href="#" title="Vers ma page Pinterest">Pinterest</a>
+      </div>
+      <span class="footer__copyright">&copy; 2016-2017 - Anthony Beaumecker</span>
+    </footer>
+  </div>
 </body>
 </html>
