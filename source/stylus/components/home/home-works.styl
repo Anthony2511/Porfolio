@@ -1,0 +1,116 @@
+.works
+  padding: s(100,16) s(20,16)
+  background-color: $lightBlue
+  &__width
+    max-width: s(1140,16)
+    margin: 0 auto
+  &__container
+    display: flex
+    flex-direction: row
+  &__bloc
+    margin-right: s(50,16)
+    position: relative
+    overflow: hidden
+    display: inline-block
+    &:last-child
+      margin-right: 0
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      display: block
+  &__infos
+    position: absolute
+    bottom: s(20,16)
+    left: s(40,16)
+    color: $white
+    transform: translateX(-350px)
+    &:before
+      content: ""
+      width: s(2,16)
+      height: s(50,16)
+      background-color: $white
+      display: inline-block
+      position: relative
+      left: s(-20,16)
+      top: s(55,16)
+      transform: translateX(0px)
+  &__title
+    text-transform: uppercase
+    font-size: s(25,16)
+    font-family: 'montserrat'
+    font-weight: bold
+    margin-bottom: s(10,25)
+  &__text
+    font-size: s(16,16)
+  &__img
+    display: block
+  &__link
+    font-size: s(25,16)
+    font-weight: bold
+    color: $white
+    background-color: $darkBlue
+    margin: s(50,25) auto 0
+    display: block
+    text-align: center
+    padding: s(30,25) s(90,25)
+    border-radius: s(50,25)
+    width: 39%
+  &__link-projects
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    animation: eyes 0.5s ease-in-out
+    & span
+      hidden()
+    &:before
+      icon('iconEyesHover')
+      color: $white
+      font-size: s(25,16)
+      position: relative
+      top: 45%
+      left: 45%
+      opacity: 0
+
+
+@keyframes title
+  0%
+    transform: translateX(-350px)
+    animation: title 0.6s ease-in-out
+  100%
+    transform: translateX(0px)
+    animation: title 0.6s ease-in-out
+
+@keyframes eyes
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  75%
+    opacity: 1
+  100%
+    opacity: 1
+
+
+
+.works__bloc:hover .works__bloc:before
+  transition: 0.3s ease-in-out
+  background-color: rgba(119,119,119,0.6)
+
+.works__bloc:hover .works__infos
+  animation: title 0.6s ease-in-out
+  transform: translateX(0px)
+
+.works__bloc:hover .works__link-projects:before
+  animation: eyes 0.5s ease-in-out
+  opacity: 1
