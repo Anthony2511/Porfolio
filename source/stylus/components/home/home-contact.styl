@@ -1,0 +1,71 @@
+.contact
+  padding-bottom: s(100,16)
+  &__text
+    font-size: s(18,16)
+    color: $darkBlue
+    line-height: 1.6em
+    width: 65%
+    margin-bottom: s(50,18)
+  &__form-container
+    display: flex
+    flex-direction: row
+    width: 100%
+  &__form-bloc
+    width: 50%
+    margin-right: s(50,16)
+    &:last-child
+      margin-right: 0
+  &__bloc
+    font-size: s(20,16)
+    font-family: 'montserrat'
+    font-weight: bold
+    width: 100%
+  &__form-input
+    background-color: $white
+    width: 100%
+    font-size: s(16,20)
+    padding: s(20,20)
+    border-radius: s(10,20)
+    border: s(1,16) solid transparent
+    transition: 0.3s ease-in-out
+    &::placeholder
+      color: $mediumGrey
+    &:hover
+    &:focus
+      border: s(1,16) solid $lightBlue
+      transition: 0.3s ease-in-out
+  &__form-label
+    display: block
+    margin: s(20,16) 0
+    &:last-child
+      margin: s(20,16) 0 0
+  &__form-textarea
+    background-color: $white
+    width: 100%
+    border: none
+    font-size: s(16,20)
+    padding: s(20,16)
+    border-radius: s(10,16)
+    height: s(294,16)
+    border: s(1,16) solid transparent
+    transition: 0.3s ease-in-out
+    &:hover
+    &:focus
+      border: s(1,16) solid $lightBlue
+      transition: 0.3s ease-in-out
+  &__button
+    display: block
+    font-size: s(25,16)
+    font-weight: bold
+    color: $white
+    background-color: $darkBlue
+    margin: s(50,25) auto 0
+    display: block
+    text-align: center
+    padding: s(20,25) s(70,25)
+    border-radius: s(50,25)
+    border: none
+  &__span
+    margin: s(10,16) auto
+    text-align: center
+    display: block
