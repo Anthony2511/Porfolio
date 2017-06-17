@@ -628,8 +628,8 @@ img
     width: 100%;
     height: 100%;
 
-    -webkit-animation: eyes .5s ease-in-out;
-            animation: eyes .5s ease-in-out;
+    -webkit-animation: eyes .7s ease-in-out;
+            animation: eyes .7s ease-in-out;
 }
 .works__link-projects span
 {
@@ -660,10 +660,10 @@ img
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.works__bloc:hover .works__bloc:before
+.works__bloc:hover.works__bloc:before
 {
-    -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
+    -webkit-animation: opacity .4s ease-in-out;
+            animation: opacity .4s ease-in-out;
 
     background-color: rgba(119,119,119,.6);
 }
@@ -672,13 +672,13 @@ img
     -webkit-transform: translateX(0px);
         -ms-transform: translateX(0px);
             transform: translateX(0px);
-    -webkit-animation: title .6s ease-in-out;
-            animation: title .6s ease-in-out;
+    -webkit-animation: title .5s ease-in-out;
+            animation: title .5s ease-in-out;
 }
 .works__bloc:hover .works__link-projects:before
 {
-    -webkit-animation: eyes .5s ease-in-out;
-            animation: eyes .5s ease-in-out;
+    -webkit-animation: eyes .7s ease-in-out;
+            animation: eyes .7s ease-in-out;
 
     opacity: 1;
 }
@@ -688,15 +688,15 @@ img
     {
         -webkit-transform: translateX(-350px);
                 transform: translateX(-350px);
-        -webkit-animation: title .6s ease-in-out;
-                animation: title .6s ease-in-out;
+        -webkit-animation: title .5s ease-in-out;
+                animation: title .5s ease-in-out;
     }
     100%
     {
         -webkit-transform: translateX(0px);
                 transform: translateX(0px);
-        -webkit-animation: title .6s ease-in-out;
-                animation: title .6s ease-in-out;
+        -webkit-animation: title .5s ease-in-out;
+                animation: title .5s ease-in-out;
     }
 }
 @keyframes title
@@ -705,15 +705,15 @@ img
     {
         -webkit-transform: translateX(-350px);
                 transform: translateX(-350px);
-        -webkit-animation: title .6s ease-in-out;
-                animation: title .6s ease-in-out;
+        -webkit-animation: title .5s ease-in-out;
+                animation: title .5s ease-in-out;
     }
     100%
     {
         -webkit-transform: translateX(0px);
                 transform: translateX(0px);
-        -webkit-animation: title .6s ease-in-out;
-                animation: title .6s ease-in-out;
+        -webkit-animation: title .5s ease-in-out;
+                animation: title .5s ease-in-out;
     }
 }
 @-webkit-keyframes eyes
@@ -752,5 +752,43 @@ img
     100%
     {
         opacity: 1;
+    }
+}
+@-webkit-keyframes opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    75%
+    {
+        background-color: rgba(119,119,119,.6);
+    }
+    100%
+    {
+        background-color: rgba(119,119,119,.6);
+    }
+}
+@keyframes opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    75%
+    {
+        background-color: rgba(119,119,119,.6);
+    }
+    100%
+    {
+        background-color: rgba(119,119,119,.6);
     }
 }

@@ -70,7 +70,7 @@
     left: 0
     right: 0
     bottom: 0
-    animation: eyes 0.5s ease-in-out
+    animation: eyes 0.7s ease-in-out
     & span
       hidden()
     &:before
@@ -86,10 +86,10 @@
 @keyframes title
   0%
     transform: translateX(-350px)
-    animation: title 0.6s ease-in-out
+    animation: title 0.5s ease-in-out
   100%
     transform: translateX(0px)
-    animation: title 0.6s ease-in-out
+    animation: title 0.5s ease-in-out
 
 @keyframes eyes
   0%
@@ -101,16 +101,26 @@
   100%
     opacity: 1
 
+@keyframes opacity
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  75%
+    background-color: rgba(119,119,119,0.6)
+  100%
+    background-color: rgba(119,119,119,0.6)
 
 
-.works__bloc:hover .works__bloc:before
-  transition: 0.3s ease-in-out
+
+.works__bloc:hover.works__bloc:before
+  animation: opacity 0.4s ease-in-out
   background-color: rgba(119,119,119,0.6)
 
 .works__bloc:hover .works__infos
-  animation: title 0.6s ease-in-out
+  animation: title 0.5s ease-in-out
   transform: translateX(0px)
 
 .works__bloc:hover .works__link-projects:before
-  animation: eyes 0.5s ease-in-out
+  animation: eyes 0.7s ease-in-out
   opacity: 1
