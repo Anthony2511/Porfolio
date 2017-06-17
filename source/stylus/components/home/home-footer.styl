@@ -1,0 +1,36 @@
+.footer
+  background-color: $darkBlue
+  &__width
+    max-width: s(1140,16)
+    padding: s(100,16) 0 s(50,16)
+    margin: 0 auto
+  &__copyright
+    display: inline-block
+    color: $white
+    font-size: s(18,16)
+    font-family: 'montserrat'
+    font-weight: 100
+    margin-left: s(50,18)
+    position: relative
+    top: s(-5,18)
+  &__link
+    margin-right: s(10,16)
+    &:last-child
+      margin-right: 0
+    & span
+      hidden()
+    &--facebook
+      &:before
+        icon('iconFacebook')
+        font-size: s(25,16)
+        color: $white
+    &--github
+      &:before
+        icon('iconGithub')
+        font-size: s(25,16)
+        color: $white
+    &--pinterest
+      &:before
+        icon('iconPinterest')
+        font-size: s(25,16)
+        color: $white

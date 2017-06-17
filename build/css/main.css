@@ -282,7 +282,7 @@ img
     position: relative;
     z-index: 20;
 
-    padding: 16.875em 0;
+    padding: 18.75em 0 15em;
 
     text-align: center;
     letter-spacing: 5px;
@@ -392,9 +392,15 @@ img
     font-size: 2.1875em;
     font-weight: bold;
 
+    display: inline-block;
+
     margin-bottom: 1.428571428571429em;
 
     color: #2c3e50;
+}
+.title__footer
+{
+    margin-right: 1.428571428571429em;
 }
 .title:before
 {
@@ -796,10 +802,6 @@ img
         background-color: rgba(119,119,119,.6);
     }
 }
-.contact
-{
-    padding-bottom: 6.25em;
-}
 .contact__text
 {
     font-size: 1.125em;
@@ -925,12 +927,21 @@ img
     margin: 2em auto 0;
     padding: .8em 2.8em;
 
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
     text-align: center;
 
     color: #fff;
     border: none;
     border-radius: 2em;
     background-color: #2c3e50;
+}
+.contact__button:hover
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    background-color: #34495e;
 }
 .contact__span
 {
@@ -939,4 +950,97 @@ img
     margin: .625em auto;
 
     text-align: center;
+}
+.footer
+{
+    background-color: #2c3e50;
+}
+.footer__width
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 0 3.125em;
+}
+.footer__copyright
+{
+    font-family: 'montserrat';
+    font-size: 1.125em;
+    font-weight: 100;
+
+    position: relative;
+    top: -.277777777777778em;
+
+    display: inline-block;
+
+    margin-left: 2.777777777777778em;
+
+    color: #fff;
+}
+.footer__link
+{
+    margin-right: .625em;
+}
+.footer__link:last-child
+{
+    margin-right: 0;
+}
+.footer__link span
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+.footer__link--facebook:before
+{
+    font-family: 'icomoon';
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\e902';
+    text-transform: none;
+
+    color: #fff;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer__link--github:before
+{
+    font-family: 'icomoon';
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\e903';
+    text-transform: none;
+
+    color: #fff;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer__link--pinterest:before
+{
+    font-family: 'icomoon';
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\e904';
+    text-transform: none;
+
+    color: #fff;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
