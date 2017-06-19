@@ -35,7 +35,7 @@
       transition: 0.3s ease-in-out
   &__form-label
     display: block
-    margin: s(20,16) 0
+    margin: s(30,16) 0 s(10,16)
     &:last-child
       margin: s(20,16) 0 0
   &__form-textarea
@@ -45,9 +45,11 @@
     font-size: s(16,20)
     padding: s(20,16)
     border-radius: s(10,16)
-    height: s(294,16)
+    height: s(300,16)
     border: s(1,16) solid transparent
     transition: 0.3s ease-in-out
+    &::placeholder
+      color: $mediumGrey
     &:hover
     &:focus
       border: s(1,16) solid $lightBlue

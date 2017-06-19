@@ -11,11 +11,33 @@
     <h1 class="hidden" aria-level="1" role="heading">Anthony Beaumecker</h1>
       <nav class="nav">
         <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
+        <div class="nav__button">
+          <div class="nav__button-wrap">
+            <div class="nav__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
         <div class="nav__bloc">
-          <a class="nav__item" href="#">Accueil</a>
-          <a class="nav__item" href="#">&Aacute; propos</a>
-          <a class="nav__item" href="#">Réalisations</a>
-          <a class="nav__item" href="#">Contact</a>
+          <div class="nav__container">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html"><span class="nav__span">Accueil</span></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__span">&Aacute; propos</span></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__span">Réalisations</span></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__span">Contact</span></a>
+              </li>
+            </ul>
+          </div>  
         </div>
       </nav>
       <header class="header">
@@ -28,7 +50,7 @@
       <div class="wrap">
         <section class="about">
           <figure class="about__figure">
-            <img class="about__img" src="../images/me.png" width="466" height="829" alt="C'est moi">
+            <img class="about__img" src="./images/me.png" width="466" height="829" alt="C'est moi">
           </figure>
           <section class="about__bloc">
             <h3 class="title" aria-level="3" role="heading">Qui suis-je ?</h3>
@@ -44,7 +66,7 @@
               La plupart du temps je code sur l’éditeur de texte <strong>Atom</strong>, qui est mon éditeur coup de coeur.
             </p>
             <p class="about__text">
-              Envie d’en savoir plus sur mon parcours ? Mon <a class="underline" href="#">CV</a> n’attend plus que toi !
+              Envie d’en savoir plus sur mon parcours ? Mon <a class="underline" href="#" title="Vers mon CV">CV</a> n’attend plus que toi !
             </p>
             <a class="about__link" href="#" title="Vers mon cv">Voir mon cv</a>
           </section>
@@ -56,7 +78,7 @@
             <div class="works__container">
               <div class="works__bloc">
                 <figure class="works__figure">
-                  <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+                  <img class="works__img" src="./images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
                 </figure>
                 <section class="works__infos">
                   <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
@@ -66,7 +88,7 @@
               </div>
               <div class="works__bloc">
                 <figure class="works__figure">
-                  <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+                  <img class="works__img" src="./images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
                 </figure>
                 <section class="works__infos">
                   <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
@@ -76,7 +98,7 @@
               </div>
               <div class="works__bloc">
                 <figure class="works__figure">
-                  <img class="works__img" src="../images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
+                  <img class="works__img" src="./images/project-mariam.jpg" width="600" height="400" alt="Projet Mariam-Faso">
                 </figure>
                 <section class="works__infos">
                   <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
@@ -131,6 +153,9 @@
               <a class="footer__link footer__link--pinterest" href="#" title="Vers ma page Pinterest"><span>Pinterest</span></a>
               <span class="footer__copyright">&copy; 2016-2017 - Anthony Beaumecker</span>
           </section>
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+          <script src="scripts/nav.js"></script>
+          <script src="scripts/no-js.js"></script>
         </footer>
       </div>
 </body>
