@@ -1,5 +1,5 @@
 (function ($) {
-    $('.nav__item').click(function (e) {
+    $('.nav__menu').click(function (e) {
         e.preventDefault();
         $(this).next().toggleClass('open');
         $(this).toggleClass('unfolded');
