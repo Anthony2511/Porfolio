@@ -798,6 +798,20 @@ img
 {
     background-color: #fff;
 }
+@media screen and (max-width: 839px)
+{
+    .title__footer
+    {
+        margin-right: .571428571428571em;
+    }
+}
+@media screen and (max-width: 777px)
+{
+    .title__footer
+    {
+        display: block;
+    }
+}
 @media screen and (max-width: 579px)
 {
     .title
@@ -1668,7 +1682,7 @@ img
 {
     max-width: 71.25em;
     margin: 0 auto;
-    padding: 6.25em 0 3.125em;
+    padding: 6.25em 1.25em 3.125em;
 }
 .footer__copyright
 {
@@ -1699,16 +1713,25 @@ img
     top: -99999px;
     left: -99999px;
 }
+.footer__link--facebook:hover:before
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #adadad;
+}
 .footer__link--facebook:before
 {
     font-family: 'icomoon';
-    font-size: 1.5625em;
+    font-size: 1.875em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
     content: '\e902';
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
     text-transform: none;
 
     color: #fff;
@@ -1717,16 +1740,25 @@ img
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.footer__link--github:hover:before
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #adadad;
+}
 .footer__link--github:before
 {
     font-family: 'icomoon';
-    font-size: 1.5625em;
+    font-size: 1.875em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
     content: '\e903';
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
     text-transform: none;
 
     color: #fff;
@@ -1735,16 +1767,25 @@ img
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.footer__link--pinterest:hover:before
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #adadad;
+}
 .footer__link--pinterest:before
 {
     font-family: 'icomoon';
-    font-size: 1.5625em;
+    font-size: 1.875em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
     content: '\e904';
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
     text-transform: none;
 
     color: #fff;
@@ -1752,4 +1793,44 @@ img
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 839px)
+{
+    .footer__copyright
+    {
+        margin-left: 1.111111111111111em;
+    }
+    .footer__width
+    {
+        padding: 6.25em 1.25em;
+    }
+}
+@media screen and (max-width: 531px)
+{
+    .footer__copyright
+    {
+        font-size: .875em;
+
+        margin-left: .714285714285714em;
+    }
+    .footer__link--facebook:before
+    {
+        font-size: 1.5625em;
+    }
+    .footer__link--github:before
+    {
+        font-size: 1.5625em;
+    }
+    .footer__link--pinterest:before
+    {
+        font-size: 1.5625em;
+    }
+}
+@media screen and (max-width: 436px)
+{
+    .footer__copyright
+    {
+        margin-top: 1.428571428571429em;
+        margin-left: 0;
+    }
 }

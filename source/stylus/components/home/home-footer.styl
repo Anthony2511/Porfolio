@@ -2,7 +2,7 @@
   background-color: $darkBlue
   &__width
     max-width: s(1140,16)
-    padding: s(100,16) 0 s(50,16)
+    padding: s(100,16) s(20,16) s(50,16)
     margin: 0 auto
   &__copyright
     display: inline-block
@@ -20,17 +20,61 @@
     & span
       hidden()
     &--facebook
+      &:hover
+        &:before
+          color: $mediumGrey
+          transition: 0.3s ease-in-out
       &:before
         icon('iconFacebook')
-        font-size: s(25,16)
+        font-size: s(30,16)
         color: $white
+        transition: 0.3s ease-in-out
     &--github
+      &:hover
+        &:before
+          color: $mediumGrey
+          transition: 0.3s ease-in-out
       &:before
         icon('iconGithub')
-        font-size: s(25,16)
+        font-size: s(30,16)
         color: $white
+        transition: 0.3s ease-in-out
     &--pinterest
+      &:hover
+        &:before
+          color: $mediumGrey
+          transition: 0.3s ease-in-out
       &:before
         icon('iconPinterest')
-        font-size: s(25,16)
+        font-size: s(30,16)
         color: $white
+        transition: 0.3s ease-in-out
+
+@media screen and (max-width:839px)
+  .footer
+    &__copyright
+      margin-left: s(20,18)
+    &__width
+      padding: s(100,16) s(20,16)
+
+@media screen and (max-width:531px)
+  .footer
+    &__copyright
+      font-size: s(14,16)
+      margin-left: s(10,14)
+    &__link
+      &--facebook
+        &:before
+          font-size: s(25,16)
+      &--github
+        &:before
+          font-size: s(25,16)
+      &--pinterest
+        &:before
+          font-size: s(25,16)
+
+@media screen and (max-width:436px)
+  .footer
+    &__copyright
+      margin-left: 0
+      margin-top: s(20,14)
