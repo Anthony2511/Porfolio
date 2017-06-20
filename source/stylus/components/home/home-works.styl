@@ -121,3 +121,21 @@
 .works__bloc:hover .works__link-projects:before
   animation: eyes 0.7s ease-in-out
   opacity: 1
+
+@media screen and (max-width:1024px)
+  .works
+    &__container
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: relative
+    &__bloc
+      margin-right: 0
+      margin-bottom: s(50,16)
+    &__title
+      font-size: s(30,16)
+    &__text
+      font-size: s(20,16)
+    &__infos
+      transform: translateX(-400px);

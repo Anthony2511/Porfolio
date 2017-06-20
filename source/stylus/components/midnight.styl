@@ -1,0 +1,21 @@
+.midnightHeader.default
+  background-color: transparent
+  color: $white
+  .nav__item > .nav__link:before
+    background-color: $white
+
+
+.midnightHeader.blue
+  background-color:rgba(255, 255, 255, 0.9)
+  .nav
+    &__item
+      padding-top: s(15,16)
+    &__link
+      color: $darkBlue
+    &__span
+      &--active
+        &:before
+          background: $darkBlue
+
+.nav__item > .nav__link:before
+  background-color: $darkBlue
