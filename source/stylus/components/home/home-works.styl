@@ -129,7 +129,6 @@
       flex-direction: column
       justify-content: center
       align-items: center
-      position: relative
     &__bloc
       margin-right: 0
       margin-bottom: s(50,16)
@@ -138,4 +137,33 @@
     &__text
       font-size: s(20,16)
     &__infos
-      transform: translateX(-400px);
+      transform: translateX(-400px)
+      &:before
+        height: s(60,16)
+        top: s(65,16)
+
+@media screen and (max-width:550px)
+  .works
+    &__title
+      font-size: s(25,16)
+    &__text
+      font-size: s(16,16)
+    &__infos
+      transform: translateX(-350px)
+      &:before
+        height: s(50,16)
+        top: s(55,16)
+
+@media screen and (max-width:410px)
+  .works
+    &__title
+      font-size: s(20,16)
+    &__text
+      font-size: s(14,16)
+
+
+@media screen and (max-width:350px)
+  .works
+      &__link-projects
+        &:before
+          font-size: s(16,16)
