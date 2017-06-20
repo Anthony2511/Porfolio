@@ -1,15 +1,12 @@
-.midnightHeader.default
-  background-color: transparent
-  color: $white
-  .nav__item > .nav__link:before
-    background-color: $white
 
 
-.midnightHeader.blue
-  background-color:rgba(255, 255, 255, 0.9)
+
+.menu-fixed
   .nav
+    background-color:rgba(255, 255, 255, 0.9)
+    top: 0
     &__item
-      padding-top: s(15,16)
+      padding: s(15,16) 0
     &__link
       color: $darkBlue
       display: block
@@ -20,5 +17,7 @@
         &:before
           background: $darkBlue
 
-.nav__item > .nav__link:before
-  background-color: $darkBlue
+  .nav__item > .nav__link:before
+    background-color: $darkBlue
+  .nav__item > .nav__link:hover
+    color: $darkBlue
