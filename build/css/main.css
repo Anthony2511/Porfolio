@@ -798,6 +798,34 @@ img
 {
     background-color: #fff;
 }
+@media screen and (max-width: 579px)
+{
+    .title
+    {
+        font-size: 1.875em;
+    }
+}
+@media screen and (max-width: 503px)
+{
+    .title
+    {
+        font-size: 1.5625em;
+    }
+}
+@media screen and (max-width: 430px)
+{
+    .title
+    {
+        font-size: 1.25em;
+    }
+}
+@media screen and (max-width: 355px)
+{
+    .title
+    {
+        font-size: 1.125em;
+    }
+}
 .midnightHeader.default
 {
     color: #fff;
@@ -959,6 +987,14 @@ img
         text-align: left;
     }
 }
+@media screen and (max-width: 579px)
+{
+    .about__text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+    }
+}
 @media screen and (max-width: 385px)
 {
     .about__link
@@ -1064,6 +1100,12 @@ img
 {
     font-size: 1em;
 }
+.works__center
+{
+    margin: 0 auto;
+
+    text-align: center;
+}
 .works__img
 {
     display: block;
@@ -1073,9 +1115,8 @@ img
     font-size: 1.5625em;
     font-weight: bold;
 
-    display: block;
+    display: inline-block;
 
-    width: 38%;
     margin: 2em auto 0;
     padding: .8em 2.8em;
 
@@ -1224,6 +1265,15 @@ img
         height: 3.125em;
     }
 }
+@media screen and (max-width: 500px)
+{
+    .works__link
+    {
+        font-size: 1.375em;
+
+        padding: .681818181818182em 2.272727272727273em;
+    }
+}
 @media screen and (max-width: 410px)
 {
     .works__title
@@ -1233,6 +1283,12 @@ img
     .works__text
     {
         font-size: .875em;
+    }
+    .works__link
+    {
+        font-size: 1.125em;
+
+        padding: .833333333333333em 2.222222222222222em;
     }
 }
 @media screen and (max-width: 350px)
