@@ -1,6 +1,7 @@
 .header
   background url('../images/backgroundPortfolio.jpg') no-repeat top center/cover
   position: relative
+  min-height: 100vh
   &:before
     content: ""
     position: absolute
@@ -13,10 +14,13 @@
     background-color: rgba(0, 0, 0, 0.8)
   &__bloc
     color: $white
-    position: relative
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 30%
     z-index: 20
     font-family: 'montserrat'
-    padding: s(300,16) 0 s(240,16)
     text-align: center
     text-transform: uppercase
     letter-spacing: 5px
@@ -33,7 +37,10 @@
     display: block
     padding-bottom: s(50,16)
     color: $white
-    position: relative
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
     z-index: 20
     text-align: center
     & span
@@ -52,3 +59,41 @@
 .header__scroll:hover .header__scroll:before
     transform: translateY(5px)
     transition: 0.5s $ease-personalize
+
+@media screen and (max-width:1024px)
+  .header
+    padding: 0 s(20,16)
+
+@media screen and (max-width:843px)
+  .header
+    padding: s(100,16) s(20,16)
+    &__title
+    &__text
+      font-size: s(40,16)
+      line-height: 1.45em
+    &__bloc
+      letter-spacing: 4px
+
+@media screen and (max-width:686px)
+  .header
+    &__title
+    &__text
+      font-size: s(30,16)
+
+@media screen and (max-width:549px)
+  .header
+    &__title
+    &__text
+      font-size: s(20,16)
+
+@media screen and (max-width:415px)
+  .header
+    &__title
+    &__text
+      font-size: s(18,16)
+
+@media screen and (max-width:368px)
+  .header
+    &__title
+    &__text
+      font-size: s(14,16)
