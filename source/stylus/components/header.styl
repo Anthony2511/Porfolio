@@ -1,99 +1,66 @@
-.header
-  background url('../images/backgroundPortfolio.jpg') no-repeat top center/cover
+.projet-header
+  height: s(560,16)
   position: relative
-  min-height: 100vh
+  clearfix()
   &:before
     content: ""
     position: absolute
     top: 0
-    bottom: 0
     right: 0
+    bottom: 0
     left: 0
+    background-color: rgba(44,62,80,0.8)
+  &__img
+    font-family: 'object-fit: cover'
+    object-fit: cover
+    height: s(560,16)
     width: 100%
-    height: 100%
-    background-color: rgba(0, 0, 0, 0.8)
   &__bloc
-    color: $white
     position: absolute
-    left: 0
-    right: 0
-    bottom: 0
-    top: 30%
-    z-index: 20
+    top: s(150,16)
+    color: $white
     font-family: 'montserrat'
-    text-align: center
-    text-transform: uppercase
-    letter-spacing: 5px
   &__title
     font-size: s(50,16)
-    font-weight: 100
-    line-height: 1.6em
-    font-family: 'varela'
-  &__text
+    text-transform: uppercase
     font-weight: bold
-    font-size: s(50,16)
-    font-family: 'montserrat'
-  &__scroll
+    margin-bottom: s(50,50)
+  &__date
+    font-size: s(20,16)
+    font-weight: 300
+    margin-bottom: s(50,20)
     display: block
-    padding-bottom: s(50,16)
-    color: $white
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 20
-    text-align: center
-    & span
-      hidden()
-    &:before
-      icon('iconScroll')
-      display: block
-      color: $white
-      font-size: s(25,16)
-      transition: all 0.5s $ease-personalize
-    &:hover
+    font-family: 'montserrat'
+    font-weight: bold
+    & strong
+      font-weight: 100
+  &__text
+    width: 40%
+    font-family: 'varela'
+    font-size: s(18,16)
+    line-height: 1.6em
+  &__links
+    float: right
+    position: relative
+    top: s(-320,16)
+  &__link
+    display: block
+    background-color: $white
+    color: $darkBlue
+    font-size: s(20,16)
+    padding: s(15,20) s(50,20)
+    border-radius: s(50,20)
+    font-family: 'montserrat'
+    font-weight: 500
+    &--repo
       &:before
-        transform: translateY(5px)
-        transition: all 0.5s $ease-personalize
-
-.header__scroll:hover .header__scroll:before
-    transform: translateY(5px)
-    transition: 0.5s $ease-personalize
-
-@media screen and (max-width:1024px)
-  .header
-    padding: 0 s(20,16)
-
-@media screen and (max-width:843px)
-  .header
-    padding: s(100,16) s(20,16)
-    &__title
-    &__text
-      font-size: s(40,16)
-      line-height: 1.45em
-    &__bloc
-      letter-spacing: 4px
-
-@media screen and (max-width:686px)
-  .header
-    &__title
-    &__text
-      font-size: s(30,16)
-
-@media screen and (max-width:549px)
-  .header
-    &__title
-    &__text
-      font-size: s(20,16)
-
-@media screen and (max-width:415px)
-  .header
-    &__title
-    &__text
-      font-size: s(18,16)
-
-@media screen and (max-width:368px)
-  .header
-    &__title
-    &__text
-      font-size: s(14,16)
+        icon('iconRepo')
+        font-size: s(25,20)
+        margin-right: s(20,25)
+    &--site
+      &:before
+        icon('iconSite')
+        font-size: s(25,20)
+        margin-right: s(20,25)
+  &__link + &__link
+    margin-top: s(50,20)
