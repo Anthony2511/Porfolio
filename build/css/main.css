@@ -765,8 +765,6 @@ img
     font-size: 2.1875em;
     font-weight: bold;
 
-    display: inline-block;
-
     margin-bottom: 1.428571428571429em;
 
     color: #2c3e50;
@@ -792,6 +790,8 @@ img
 }
 .color
 {
+    display: inline-block;
+
     color: #fff;
 }
 .color:before
@@ -1174,6 +1174,49 @@ html.fp-enabled,
     font-weight: bold;
 
     text-decoration: underline;
+}
+@media screen and (max-width: 956px)
+{
+    .about__figure
+    {
+        position: absolute;
+        top: -99999px;
+        left: -99999px;
+    }
+    .about__bloc
+    {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 0;
+
+        text-align: center;
+    }
+    .about__link
+    {
+        display: inline-block;
+        float: none;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    .about__text
+    {
+        text-align: left;
+    }
+    .title
+    {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 385px)
+{
+    .about__link
+    {
+        font-size: 1.375em;
+
+        padding: .681818181818182em 2.272727272727273em;
+    }
 }
 .works
 {
