@@ -15,7 +15,9 @@
          </div>
       <?php endif; ?>
       <?php if (!is_single()) : ?>
-        <h2 class="title color projet" aria-level="2" role="heading"><?= __('Tous mes projets','po'); ?></h2>
+        <div class="container__projets">
+          <h2 class="title color projet" aria-level="2" role="heading"><?= __('Tous mes projets','po'); ?></h2>
+        </div>
       <?php endif; ?>
     </section>
     <?php if (is_single()): ?>

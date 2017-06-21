@@ -68,10 +68,31 @@
       &:last-child
         margin-bottom: 0
 
+.container
+  &__projets
+    max-width: s(1140,16)
+    padding: s(150,16) s(20,16) s(100,16)
+    margin: 0 auto
+    position: relative
+
+.projet
+  .header
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: rgba(44,62,80,0.8)
+
 @media screen and (max-width:1024px)
+  .container
+    &__projets
+      text-align: center
   .single-projet
     .nav
-      height: 50px
+      height: s(50,16)
       background: none
   .single-projet.menu-fixed
     .nav
@@ -87,3 +108,67 @@
       background-color: $white
     .nav__item > .nav__link:hover
       color: $white
+  .projet
+    .works
+      &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      &__bloc
+        margin-right: 0
+        margin-bottom: s(50,16)
+      &__title
+        font-size: s(30,16)
+      &__text
+        font-size: s(20,16)
+      &__width
+        padding: s(100,16) s(20,16)
+      &__infos
+        transform: translateX(-400px)
+        &:before
+          height: s(60,16)
+          top: s(65,16)
+
+@media screen and (max-width:845px)
+  .container
+    &__projets
+      padding: s(50,16) s(20,16) s(100,16)
+
+@media screen and (max-width:550px)
+  .projet
+    .works
+      &__title
+        font-size: s(25,16)
+      &__text
+        font-size: s(16,16)
+      &__infos
+        transform: translateX(-350px)
+        &:before
+          height: s(50,16)
+          top: s(55,16)
+
+@media screen and (max-width:500px)
+  .projet
+    .works
+      &__link
+        font-size: s(22,16)
+        padding: s(15,22) s(50,22)
+
+@media screen and (max-width:410px)
+  .projet
+    .works
+      &__title
+        font-size: s(20,16)
+      &__text
+        font-size: s(14,16)
+      &__link
+        font-size: s(18,16)
+        padding: s(15,18) s(40,18)
+
+@media screen and (max-width:350px)
+  .projet
+    .works
+      &__link-projects
+        &:before
+          font-size: s(16,16)
