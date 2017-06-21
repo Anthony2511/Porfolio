@@ -64,7 +64,7 @@ Template Name: Page d’accueil
               </div>
             </div>
             <div class="works__center">
-              <a class="works__link" href="#" title="Vers la page de mes projets">Voir tous mes projets</a>
+              <a class="works__link" href="#" title="Vers la page de mes projets"><?= __('Voir tous mes projets','po'); ?></a>
             </div>
           </section>
         </div>
@@ -76,7 +76,7 @@ Template Name: Page d’accueil
           </p>
           <div class="contact__form">
             <?= do_shortcode('[contact-form-7 id="20" title="Contact"]'); ?>
-            <span class="contact__span">Tous les champs sont obligatoires *</span>
+            <span class="contact__span"><?= __('Tous les champs sont obligatoires *','po'); ?></span>
           </div>
         </section>
       </div>

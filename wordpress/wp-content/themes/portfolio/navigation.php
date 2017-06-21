@@ -1,5 +1,5 @@
 <nav class="nav" id="scroll">
-  <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
+  <h2 aria-level="2" role="heading" class="hidden"><?= __('Navigation principale'); ?></h2>
   <div class="nav__button">
     <div class="nav__button-wrap">
       <div class="nav__icon">
