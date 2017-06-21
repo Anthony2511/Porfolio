@@ -22,7 +22,8 @@
     background-color: $darkBlue
   .nav__item > .nav__link:hover
     color: $darkBlue
-
+  .header
+    height: s(280,16)
 @media screen and (max-width:1024px)
   .projet
   .home
@@ -45,3 +46,13 @@
       color: $white
     .nav__item > .nav__link:before
       background-color: $white
+
+@media screen and (max-width:1024px)
+  .projet
+    .title
+      text-align: center
+      &:before
+        hidden()
+  .projet-header
+    &__bloc
+      text-align: center

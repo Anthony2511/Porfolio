@@ -1,0 +1,89 @@
+.single-projet
+  .header
+    position: relative
+    height: s(600,16)
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: rgba(44,62,80,0.8)
+  .nav
+    background-color: rgba(255, 255, 255, 0.9)
+    top: 0
+    &__link
+      color: $darkBlue
+  .nav__item > .nav__link:before
+    background-color: $darkBlue
+  .nav__item > .nav__link:hover
+    color: $darkBlue
+  .container
+    &__bloc
+      max-width: s(1140,16)
+      margin: 0 auto
+      padding: s(150,16) s(20,16) s(100,16)
+      color: $white
+      position: relative
+      z-index: 200
+      clearfix()
+    &__width
+      margin-right: s(50,16)
+      &:last-child
+        margin-right: 0
+    &__title
+      font-size: s(50,16)
+      font-weight: bold
+      margin-bottom: s(50,50)
+    &__date
+      font-size: s(25,16)
+      display: block
+      margin-bottom: s(50,25)
+    &__text
+      font-size: s(18,16)
+      line-height: 1.6em
+      width: 50%
+    &__links
+      float: right
+      position: relative
+      top: s(-160,16)
+    &__link
+      color: $darkBlue
+      background-color: $white
+      display: block
+      font-size: s(25,16)
+      border-radius: s(50,25)
+      padding: s(15,25) s(50,25)
+      margin-bottom: s(50,25)
+      text-align: center
+      &--site
+        &:before
+          icon('iconSite')
+          margin-right: s(20,25)
+      &--repo
+        &:before
+          icon('iconRepo')
+          margin-right: s(20,25)
+      &:last-child
+        margin-bottom: 0
+
+@media screen and (max-width:1024px)
+  .single-projet
+    .nav
+      height: 50px
+      background: none
+  .single-projet.menu-fixed
+    .nav
+      background-color: rgba(255, 255, 255, 0.9)
+  .single-projet.with-menu
+    .nav
+      height: auto
+      &__link
+        color: $white
+      &__icon span
+        background-color: $white
+    .nav__item > .nav__link:before
+      background-color: $white
+    .nav__item > .nav__link:hover
+      color: $white

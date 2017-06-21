@@ -2,7 +2,6 @@
   background-size: cover
   background-position: 50% 40%
   background-repeat: no-repeat
-  position: relative
   &:before
     content: ""
     position: absolute
@@ -37,8 +36,8 @@
     line-height: 1.6em
   &__links
     position: absolute
-    bottom: s(100,16)
     right: 0
+    bottom: 100px
     z-index: 200
   &__link
     display: block
@@ -61,6 +60,8 @@
         margin-right: s(20,25)
   &__link + &__link
     margin-top: s(50,20)
+  .wrap
+    position: relative
 
 .projets
   background url('../images/backgroundPortfolio.jpg') no-repeat top center/cover
