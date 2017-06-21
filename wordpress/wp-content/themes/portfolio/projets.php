@@ -8,7 +8,7 @@ Template Name: Page Projets
     query_posts([
         'posts_per_page' => 3,
         'orderby' => 'date',
-        'order' => 'ASC',
+        'order' => 'DESC',
         'post_type' => 'projets',
         'paged' => get_query_var('paged')
     ]);

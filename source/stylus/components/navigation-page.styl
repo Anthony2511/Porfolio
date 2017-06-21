@@ -22,3 +22,26 @@
     background-color: $darkBlue
   .nav__item > .nav__link:hover
     color: $darkBlue
+
+@media screen and (max-width:1024px)
+  .projet
+  .home
+    .nav
+      background: none
+      height: s(50,16)
+      &__link
+        color: $white
+  .projet.with-menu
+  .home.with-menu
+    .nav
+      height: auto
+      &__icon span
+        background-color: $white
+      &__span
+        &--active
+          &:before
+            background: $white
+    .nav__item > .nav__link:hover
+      color: $white
+    .nav__item > .nav__link:before
+      background-color: $white

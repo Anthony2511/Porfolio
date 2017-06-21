@@ -260,7 +260,7 @@ form input
 {
     position: relative;
 
-    min-height: 100vh;
+    height: 100vh;
 
     background: url('../images/backgroundPortfolio.jpg') no-repeat top center/cover;
 }
@@ -600,7 +600,7 @@ form input
             transform: scaleX(1);
     text-align: center;
 
-    background-color: #fff;
+    background-color: $yellow;
 }
 .nav:last-child
 {
@@ -783,7 +783,7 @@ form input
 {
     .nav
     {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -921,6 +921,46 @@ form input
 {
     color: #2c3e50;
 }
+@media screen and (max-width: 1024px)
+{
+    .projet .nav,
+    .home .nav
+    {
+        height: 3.125em;
+
+        background: none;
+    }
+    .projet .nav__link,
+    .home .nav__link
+    {
+        color: #fff;
+    }
+    .projet.with-menu .nav,
+    .home.with-menu .nav
+    {
+        height: auto;
+    }
+    .projet.with-menu .nav__icon span,
+    .home.with-menu .nav__icon span
+    {
+        background-color: #fff;
+    }
+    .projet.with-menu .nav__span--active:before,
+    .home.with-menu .nav__span--active:before
+    {
+        background: #fff;
+    }
+    .projet.with-menu .nav__item > .nav__link:hover,
+    .home.with-menu .nav__item > .nav__link:hover
+    {
+        color: #fff;
+    }
+    .projet.with-menu .nav__item > .nav__link:before,
+    .home.with-menu .nav__item > .nav__link:before
+    {
+        background-color: #fff;
+    }
+}
 .title
 {
     font-family: 'montserrat';
@@ -1036,6 +1076,33 @@ form input
 .menu-fixed .nav__item > .nav__link:hover
 {
     color: #2c3e50;
+}
+@media screen and (max-width: 1024px)
+{
+    .menu-fixed .nav__link
+    {
+        color: #fff;
+    }
+    .menu-fixed .nav__icon span
+    {
+        background-color: #2c3e50;
+    }
+    .menu-fixed .nav__button
+    {
+        top: -1.375em;
+    }
+    .menu-fixed .nav__span--active:before
+    {
+        background: #fff;
+    }
+    .menu-fixed .nav__item > .nav__link:before
+    {
+        background-color: #fff;
+    }
+    .menu-fixed .nav__item > .nav__link:hover
+    {
+        color: #fff;
+    }
 }
 strong
 {

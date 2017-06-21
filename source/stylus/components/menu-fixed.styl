@@ -13,8 +13,25 @@
       &--active
         &:before
           background: $darkBlue
-
   .nav__item > .nav__link:before
     background-color: $darkBlue
   .nav__item > .nav__link:hover
     color: $darkBlue
+
+@media screen and (max-width:1024px)
+  .menu-fixed
+    .nav
+      &__link
+        color: $white
+      &__icon span
+        background-color: $darkBlue
+      &__button
+        top: s(-22,16)
+      &__span
+        &--active
+          &:before
+            background: $white
+    .nav__item > .nav__link:before
+      background-color: $white
+    .nav__item > .nav__link:hover
+      color: $white

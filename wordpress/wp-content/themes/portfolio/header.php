@@ -1,4 +1,4 @@
-<header class="projet-header projets">
+<header class="projet-header projets header">
   <div class="wrap">
     <section class="projet-header__bloc">
        <?php if (is_single()): ?>

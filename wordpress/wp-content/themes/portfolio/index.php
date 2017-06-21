@@ -32,7 +32,7 @@ Template Name: Page d’accueil
           <section class="works__width">
             <h3 class="title color" aria-level="3" role="heading"><?= __('Mes dernières réalisations','po'); ?></h3>
             <div class="works__container">
-              <?php $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'projets', 'order' => 'ASC'] ); ?>
+              <?php $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'projets'] ); ?>
               <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
               <div class="works__bloc">
                 <?php $projetHome = get_field('single-projet__image'); ?>
