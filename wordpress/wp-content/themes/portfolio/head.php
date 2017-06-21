@@ -3,6 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Anthony Beaumecker</title>
+  <title><?= __('Anthony Beaumecker','po'); ?></title>
   <link rel="stylesheet" href="<?=$css; ?>">
 </head>

@@ -1042,6 +1042,24 @@ img
 {
     color: #2c3e50;
 }
+strong
+{
+    font-weight: bold;
+}
+.about__bloc p
+{
+    font-size: 1.125em;
+    font-weight: 100;
+    line-height: 1.6em;
+
+    margin-bottom: 2.777777777777778em;
+
+    color: #2c3e50;
+}
+.about__bloc p:last-child
+{
+    margin-bottom: 0;
+}
 .about
 {
     display: -webkit-box;
@@ -1066,24 +1084,6 @@ img
 {
     width: 90%;
     margin-left: 3.125em;
-}
-.about__text
-{
-    font-size: 1.125em;
-    font-weight: 100;
-    line-height: 1.6em;
-
-    margin-bottom: 2.777777777777778em;
-
-    color: #2c3e50;
-}
-.about__text:last-child
-{
-    margin-bottom: 0;
-}
-.about__text strong
-{
-    font-weight: bold;
 }
 .about__link
 {

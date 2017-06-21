@@ -8,7 +8,7 @@ Template Name: Page d’accueil
 
 <body class="home">
   <div class="background">
-    <h1 class="hidden" aria-level="1" role="heading">Anthony Beaumecker</h1>
+    <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
     <?php include('navigation.php'); ?>
     <?php include('header-home.php'); ?>
       <div class="wrap" id="page">
@@ -17,22 +17,9 @@ Template Name: Page d’accueil
             <img class="about__img" src="./images/me.png" width="466" height="829" alt="C'est moi">
           </figure>
           <section class="about__bloc">
-            <h3 class="title" aria-level="3" role="heading">Qui suis-je ?</h3>
-            <p class="about__text">
-              Salut, moi c’est <strong>Anthony</strong> comme tu as pu le voir un peu plus haut ( enfin j’espère ).
-              J’ai <strong>22 ans</strong>, beaucoup de choses me passione dans le vie dont la course à pied que je
-              pratique assez régulièrement, mais le <strong>web design</strong> en occupe la majeur partie.
-            </p>
-            <p class="about__text">
-              Je maîtrise les langages de base comme <strong>HTML5</strong> &amp; <strong>CSS3</strong>. J’utilise la méthodologie <strong>BEM</strong>
-              combiné avec <strong class="coupe">SASS</strong> <strong>STYLUS</strong> depuis peu. Bon c’est bien beau, mais niveau <strong>back-end</strong> ?
-              J’intègre des sites avec le <strong>CMS Wordpress</strong> et d’autres projets en <strong>PHP</strong> avec bientôt son framework <strong>Laravel</strong>.
-              La plupart du temps je code sur l’éditeur de texte <strong>Atom</strong>, qui est mon éditeur coup de coeur.
-            </p>
-            <p class="about__text">
-              Envie d’en savoir plus sur mon parcours ? Mon <a class="underline" href="#" title="Vers mon CV">CV</a> n’attend plus que toi !
-            </p>
-            <a class="about__link" href="#" title="Vers mon cv">Voir mon cv</a>
+            <h3 class="title" aria-level="3" role="heading"><?= __('Qui suis-je ?','po'); ?></h3>
+            <?= get_field('home__introduction'); ?>
+            <a class="about__link" href="#" title="Vers mon cv"><?= __('Voir mon cv'); ?></a>
           </section>
         </section>
       </div>
