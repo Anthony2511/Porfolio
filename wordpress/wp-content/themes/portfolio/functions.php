@@ -3,6 +3,8 @@
 add_action('init', 'po_register_types');
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-intro', 341, 606, true );
+add_image_size( 'thumb-home-project', 346, 231, true );
+add_image_size( 'thumb-projects', 1140, 760, true );
 
 
 // Define shortcut path

@@ -32,39 +32,28 @@ Template Name: Page d’accueil
           <section class="works__width">
             <h3 class="title color" aria-level="3" role="heading"><?= __('Mes dernières réalisations','po'); ?></h3>
             <div class="works__container">
+              <?php $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'projets', 'order' => 'ASC'] ); ?>
+              <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
               <div class="works__bloc">
+                <?php $projetHome = get_field('single-projet__image'); ?>
                 <figure class="works__figure">
-                  <img class="works__img" src="./images/mariam.png" width="600" height="400" alt="Projet Mariam-Faso">
+                  <?php if( !empty($projetHome) ): ?>
+                  <?php $size = 'thumb-projects';
+                        $thumb = $projetHome['sizes'][ $size ]; ?>
+                  <img class="works__img" src="<?= $thumb; ?>" width="1140" height="760" alt="<?= $projetHome['alt']; ?>" />
+                   <?php endif; ?>
                 </figure>
                 <section class="works__infos">
-                  <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
-                  <span class="works__text">Site réalisé pour l'ASBL Mariam-Faso</span>
+                  <h4 class="works__title" aria-level="4" role="heading"><?php the_title(); ?></h4>
+                  <span class="works__text"><?= get_field('single-projet__slogan'); ?></span>
                 </section>
-                <a class="works__link-projects" href="projet.html" title="Vers le projet : Mariam-Faso"><span>Vers le projet</span></a>
+                <a class="works__link-projects" href="<?php the_permalink(); ?>" title="Vers le projet : <?php the_title(); ?>"><span><?= __('Vers le projet', 'po'); ?></span></a>
               </div>
-              <div class="works__bloc">
-                <figure class="works__figure">
-                  <img class="works__img" src="./images/artiste.png" width="600" height="400" alt="Projet Artiste">
-                </figure>
-                <section class="works__infos">
-                  <h4 class="works__title" aria-level="4" role="heading">L'artiste</h4>
-                  <span class="works__text">Site du peintre Nicolas De Stael</span>
-                </section>
-                <a class="works__link-projects" href="#" title="Vers le projet : Mariam-Faso"><span>Vers le projet</span></a>
-              </div>
-              <div class="works__bloc">
-                <figure class="works__figure">
-                  <img class="works__img" src="./images/mariam.png" width="600" height="400" alt="Projet Mariam-Faso">
-                </figure>
-                <section class="works__infos">
-                  <h4 class="works__title" aria-level="4" role="heading">Mariam-Faso</h4>
-                  <span class="works__text">Site réalisé pour l'ASBL Mariam-Faso</span>
-                </section>
-                <a class="works__link-projects" href="#" title="Vers le projet : Mariam-Faso"><span>Vers le projet</span></a>
-              </div>
+              <?php wp_reset_postdata(); ?>
+              <?php endwhile; endif; ?>
             </div>
             <div class="works__center">
-              <a class="works__link" href="#" title="Vers la page de mes projets"><?= __('Voir tous mes projets','po'); ?></a>
+              <a class="works__link" href="<?php the_permalink(31); ?>" title="Vers la page de mes projets"><?= __('Voir tous mes projets','po'); ?></a>
             </div>
           </section>
         </div>

@@ -1272,6 +1272,11 @@ strong
 
     content: '';
 }
+.works__img
+{
+    max-width: 100%;
+    height: auto;
+}
 .works__infos
 {
     position: absolute;
