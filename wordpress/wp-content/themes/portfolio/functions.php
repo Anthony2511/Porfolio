@@ -2,6 +2,7 @@
 
 add_action('init', 'po_register_types');
 add_theme_support('post-thumbnails');
+add_image_size( 'thumb-intro', 341, 606, true );
 
 
 // Define shortcut path

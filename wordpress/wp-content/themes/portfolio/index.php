@@ -12,20 +12,25 @@ Template Name: Page d’accueil
     <?php include('navigation.php'); ?>
     <?php include('header-home.php'); ?>
       <div class="wrap" id="page">
-        <section class="about">
+        <div class="about">
+          <?php $homeIntro = get_field('image__introduction'); ?>
           <figure class="about__figure">
-            <img class="about__img" src="./images/me.png" width="466" height="829" alt="C'est moi">
+            <?php if( !empty($homeIntro) ): ?>
+            <?php $size = 'thumb-intro';
+                  $thumb = $homeIntro['sizes'][ $size ]; ?>
+            <img class="about__img" src="<?= $thumb; ?>" width="341" height="606" alt="<?= $homeIntro['alt']; ?>" />
+             <?php endif; ?>
           </figure>
           <section class="about__bloc">
             <h3 class="title" aria-level="3" role="heading"><?= __('Qui suis-je ?','po'); ?></h3>
             <?= get_field('home__introduction'); ?>
-            <a class="about__link" href="#" title="Vers mon cv"><?= __('Voir mon cv'); ?></a>
+            <a class="about__link" href="#" title="Vers mon cv"><?= __('Voir mon cv','po'); ?></a>
           </section>
-        </section>
+        </div>
       </div>
         <div class="works">
           <section class="works__width">
-            <h3 class="title color" aria-level="3" role="heading">Mes dernières réalisations</h3>
+            <h3 class="title color" aria-level="3" role="heading"><?= __('Mes dernières réalisations','po'); ?></h3>
             <div class="works__container">
               <div class="works__bloc">
                 <figure class="works__figure">
@@ -65,7 +70,7 @@ Template Name: Page d’accueil
         </div>
       <div class="wrap">
         <section class="contact">
-          <h3 class="title" aria-level="3" role="heading">Me contacter</h3>
+          <h3 class="title" aria-level="3" role="heading"><?= __('Me contacter','po'); ?></h3>
           <p class="contact__text">
             Si tu es arrivé jusqu’ici, c’est que je t’intéresse et que tu commences déjà à me plaire.
             Besoin d’informations supplémentaires sur mes projets, sur un sujet en particulier, contacte-moi !
