@@ -56,16 +56,16 @@
     transition: .5s ease-in-out
     transform: rotate(0deg)
     & span
-      display: block;
-      position: absolute;
+      display: block
+      position: absolute
       height: s(5,20)
       width: 100%;
       background: $black
       border-radius: s(9,16)
       opacity: 1;
       left: 0;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
+      transform: rotate(0deg)
+      transition: .25s ease-in-out
   &__icon span:nth-child(1)
     top: s(8,16)
   &__icon span:nth-child(2)
@@ -198,26 +198,3 @@
   transform: translateY(-50%)
   left: 0
   right: 0
-
-.projet
-  .nav
-    background-color:rgba(255, 255, 255, 0.9)
-    position: fixed
-    top: 0
-    &__item
-      margin-right: s(50,20)
-      padding: s(15,20) 0
-    &__link
-      color: $darkBlue
-      display: block
-      width: 100%
-      height: 100%
-    &__span
-      &--active
-        &:before
-          background: $darkBlue
-
-  .nav__item > .nav__link:before
-    background-color: $darkBlue
-  .nav__item > .nav__link:hover
-    color: $darkBlue
