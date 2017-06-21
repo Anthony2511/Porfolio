@@ -1,8 +1,8 @@
 node_modules
 
-dev/*
-!dev/wp-content/
-dev/wp-content/*
-!dev/wp-content/themes/
-dev/wp-content/themes/*
-!dev/wp-content/themes/Portfolio/
+wordpress/*
+!wordpress/wp-content/
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/mariam/
