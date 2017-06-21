@@ -87,10 +87,27 @@
       background-color: rgba(44,62,80,0.8)
 
 @media screen and (max-width:1024px)
-  .container
-    &__projets
-      text-align: center
   .single-projet
+    .container
+      &__bloc
+        padding: s(100,16) s(20,16)
+      &__width
+        margin-right: 0
+      &__text
+        width: 100%
+      &__links
+        float: none
+        top: s(50,16)
+      &__link
+        width: 40%
+        margin: 0 auto
+        text-align: center
+        display: inline-block
+        margin-right: s(30,16)
+        &:last-child
+          margin-right: 0
+      &__projets
+        text-align: center
     .nav
       height: s(50,16)
       background: none
@@ -134,6 +151,26 @@
   .container
     &__projets
       padding: s(50,16) s(20,16) s(100,16)
+  .single-projet
+    .container
+      &__bloc
+        padding: 0
+
+@media screen and (max-width:775px)
+  .single-projet
+    .container
+      &__title
+        font-size: s(40,16)
+      &__date
+        font-size: s(18,16)
+      &__text
+        font-size: s(16,16)
+        line-height: 1.45em
+      &__link
+        font-size: s(18,16)
+        width: 50%
+        margin-right: 0
+        margin-bottom: s(20,18)
 
 @media screen and (max-width:550px)
   .projet
@@ -147,8 +184,21 @@
         &:before
           height: s(50,16)
           top: s(55,16)
+      &__link-projects
+        &:before
+          font-size: s(30,16)
 
 @media screen and (max-width:500px)
+  .single-projet
+    .container
+      &__link
+        width: 100%
+      &__title
+        font-size: s(30,16)
+        margin-bottom: s(20,30)
+      &__date
+        font-size: s(16,16)
+        margin-bottom: s(20,16)
   .projet
     .works
       &__link

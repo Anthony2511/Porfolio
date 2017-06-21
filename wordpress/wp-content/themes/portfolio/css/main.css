@@ -1350,7 +1350,39 @@ strong
 }
 @media screen and (max-width: 1024px)
 {
-    .container__projets
+    .single-projet .container__bloc
+    {
+        padding: 6.25em 1.25em;
+    }
+    .single-projet .container__width
+    {
+        margin-right: 0;
+    }
+    .single-projet .container__text
+    {
+        width: 100%;
+    }
+    .single-projet .container__links
+    {
+        top: 3.125em;
+
+        float: none;
+    }
+    .single-projet .container__link
+    {
+        display: inline-block;
+
+        width: 40%;
+        margin: 0 auto;
+        margin-right: 1.875em;
+
+        text-align: center;
+    }
+    .single-projet .container__link:last-child
+    {
+        margin-right: 0;
+    }
+    .single-projet .container__projets
     {
         text-align: center;
     }
@@ -1441,6 +1473,34 @@ strong
     {
         padding: 3.125em 1.25em 6.25em;
     }
+    .single-projet .container__bloc
+    {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 775px)
+{
+    .single-projet .container__title
+    {
+        font-size: 2.5em;
+    }
+    .single-projet .container__date
+    {
+        font-size: 1.125em;
+    }
+    .single-projet .container__text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+    }
+    .single-projet .container__link
+    {
+        font-size: 1.125em;
+
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 1.111111111111111em;
+    }
 }
 @media screen and (max-width: 550px)
 {
@@ -1464,9 +1524,29 @@ strong
 
         height: 3.125em;
     }
+    .projet .works__link-projects:before
+    {
+        font-size: 1.875em;
+    }
 }
 @media screen and (max-width: 500px)
 {
+    .single-projet .container__link
+    {
+        width: 100%;
+    }
+    .single-projet .container__title
+    {
+        font-size: 1.875em;
+
+        margin-bottom: .666666666666667em;
+    }
+    .single-projet .container__date
+    {
+        font-size: 1em;
+
+        margin-bottom: 1.25em;
+    }
     .projet .works__link
     {
         font-size: 1.375em;
@@ -2496,6 +2576,24 @@ strong
     .projet-header__bloc
     {
         padding-top: 6.25em;
+    }
+    .projet__infos-bloc
+    {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+    .projet__infos
+    {
+        margin-bottom: 3.125em;
+    }
+}
+@media screen and (max-width: 775px)
+{
+    .projet__infos-text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
     }
 }
 .works__container--projets

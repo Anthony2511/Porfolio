@@ -24,6 +24,18 @@
   .projet
     .wrap
       padding: 0
+
   .projet-header
     &__bloc
       padding-top: s(100,16)
+  .projet
+    &__infos-bloc
+      column-count: 1
+    &__infos
+      margin-bottom: s(50,16)
+
+@media screen and (max-width: 775px)
+  .projet
+    &__infos-text
+      font-size: s(16,16)
+      line-height: 1.45em
