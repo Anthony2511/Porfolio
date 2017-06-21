@@ -72,35 +72,12 @@ Template Name: Page d’accueil
         <section class="contact">
           <h3 class="title" aria-level="3" role="heading"><?= __('Me contacter','po'); ?></h3>
           <p class="contact__text">
-            Si tu es arrivé jusqu’ici, c’est que je t’intéresse et que tu commences déjà à me plaire.
-            Besoin d’informations supplémentaires sur mes projets, sur un sujet en particulier, contacte-moi !
+            <?= get_field('home__text-contact'); ?>
           </p>
-          <form class="contact__form" action="index.html" method="post">
-            <div class="contact__form-container">
-              <div class="contact__form-bloc">
-                <div class="contact__bloc">
-                  <label class="contact__form-label" for="name">Votre nom :</label>
-                  <input class="contact__form-input" type="text" name="name" id="name" placeholder="Beaumecker" required>
-                </div>
-                <div class="contact__bloc">
-                  <label class="contact__form-label" for="firstname">Votre prénom :</label>
-                  <input class="contact__form-input" type="text" name="firstname" id="firstname" placeholder="Anthony" required>
-                </div>
-                <div class="contact__bloc">
-                  <label class="contact__form-label" for="mail">Votre mail :</label>
-                  <input class="contact__form-input" type="mail" name="mail" id="mail" placeholder="anthonybeaumecker@gmail.com" required>
-                </div>
-              </div>
-              <div class="contact__form-bloc">
-                <div class="contact__bloc">
-                  <label class="contact__form-label" for="textarea">Votre message :</label>
-                  <textarea class="contact__form-textarea" name="textarea" id="textarea" rows="16" cols="80" placeholder="Laissez votre message ici&hellip;" required></textarea>
-                </div>
-              </div>
-            </div>
-            <button class="contact__button" type="button" name="button">Envoyez un message</button>
+          <div class="contact__form">
+            <?= do_shortcode('[contact-form-7 id="20" title="Contact"]'); ?>
             <span class="contact__span">Tous les champs sont obligatoires *</span>
-          </form>
+          </div>
         </section>
       </div>
       <?php include('footer.php'); ?>

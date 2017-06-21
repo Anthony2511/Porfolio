@@ -1055,6 +1055,45 @@ strong
 {
     margin-bottom: 0;
 }
+@media screen and (max-width: 956px)
+{
+    .about__bloc p
+    {
+        text-align: left;
+    }
+}
+.screen-reader-response
+{
+    display: none;
+}
+.wpcf7-not-valid-tip
+{
+    font-size: .7em;
+    font-weight: 500;
+
+    position: absolute;
+    bottom: -1.428571428571429em;
+    left: 0;
+
+    color: #f00;
+}
+.wpcf7-response-output.wpcf7-validation-errors
+{
+    display: none;
+}
+.wpcf7-response-output.wpcf7-mail-sent-ok
+{
+    font-size: 1.125em;
+    font-weight: 500;
+
+    position: relative;
+
+    margin-top: 1.666666666666667em;
+
+    text-align: center;
+
+    color: #008000;
+}
 .about
 {
     display: -webkit-box;
@@ -1628,6 +1667,8 @@ strong
     font-family: 'montserrat';
     font-size: 1.25em;
     font-weight: bold;
+
+    position: relative;
 
     width: 100%;
 }
